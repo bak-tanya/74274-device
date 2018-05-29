@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Татьяна Бак](https://up.htmlacademy.ru/htmlcss/21/user/74274).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Закурдаев](https://htmlacademy.ru/profile/eugeno).
 
 ---
 
