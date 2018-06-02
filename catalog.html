@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-navigation">
+
+            <a href="index.html" class="main-header-logo">
+                <img src="http://via.placeholder.com/160x30" width="160" height="30" alt="Интернет-магазин гаджетов «Девайс»">
+            </a>
+
+            <p class="search-navigation"><input type="text" placeholder="Поиск по сайту"></p>
+
+            <ul class="user-navigation">
+                <li><a class="login-profile" href="#">Валентин Петухов</a></li>
+                <li><a class="login-link" href="#">Выйти</a></li>
+            </ul>
+
+            <ul class="buying-navigation">
+                <li><a href="#">Сравнить</a></li>
+                <li><a href="#">Корзина</a></li>
+            </ul>
+
+            <ul class="site-navigation">
+                <li>Каталог товаров
+                    <ul class="catalog">
+                        <li><a href="#">Виртуальная реальность</a></li>
+                        <li><a href="#">Моноподы для селфи</a></li>
+                        <li><a href="#">Экшн-камеры</a></li>
+                        <li><a href="#">Фитнес-браслеты</a></li>
+                        <li><a href="#">Умные часы</a></li>
+                        <li><a href="#">Квадрокоптеры</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Моноподы для селфи</h1>
+
+        <ul class="breadcrums">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Каталог товаров</a></li>
+            <li class="breadcrumbs-current">Моноподы для селфи</li>
+        </ul>
+
+        <aside class="filters">
+            <h2>Фильтр:</h2>
+            <!-- здесь будет форма -->
+        </aside>
+
+        <section class="catalog">
+            <h2 class="visually-hidden">Каталог</h2>
+
+            <header class="catalog-header selection">
+                <h3>Cортировка:</h3>
+
+                <ul class="selection-type-list">
+                    <li><button class="button button-active">По цене</button></li>
+                    <li><button class="button">По типу</button></li>
+                    <li><button class="button">По популярности</button></li>
+                </ul>
+
+                <ul class="selection-direction-list">
+                    <li><button class="button">По возрастанию</button></li>
+                    <li><button class="button">По убыванию</button></li>
+                </ul>
+            </header>
+
+            <ul class="catalog-list">
+                <li class="catalog-item">
+
+                    <h3>
+                        <a href="catalog-item.html">
+                            <span class="catalog-item-title">Любительская селфи-палка</span>
+                        </a>
+                    </h3>
+
+                    <p class="catalog-item-price">500 руб</p>
+
+                    <p class="catalog-item-image">
+                        <a href="http://via.placeholder.com/360x380">
+                            <img src="http://via.placeholder.com/360x380" width="360" height="380" alt="Любительская селфи-палка">
+                        </a>
+                    </p>
+
+                    <p classs="catalog-item-action">
+                        <button class="button">В корзину</button>
+                        <button class="button">Добавить к сравнению</button>
+                    </p>
+
+                </li>
+
+                <li class="catalog-item">
+
+                    <h3>
+                        <a href="catalog-item.html">
+                            <span class="catalog-item-title">Профессиональная селфи-палка</span>
+                        </a>
+                    </h3>
+
+                    <p class="catalog-item-price">2 500 руб.</p>
+
+                    <p class="catalog-item-image">
+                        <a href="http://via.placeholder.com/360x380">
+                            <img src="http://via.placeholder.com/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
+                        </a>
+                    </p>
+
+                    <p classs="catalog-item-action">
+                        <button class="button">В корзину</button>
+                        <button class="button">Добавить к сравнению</button>
+                    </p>
+
+                </li>
+
+                <li class="catalog-item">
+
+                    <h3>
+                        <a href="catalog-item.html">
+                            <span class="catalog-item-title">Непотопляемая селфи-палка</span>
+                        </a>
+                    </h3>
+
+                    <p class="catalog-item-price">1 500 руб.</p>
+
+                    <p class="catalog-item-image">
+                        <a href="http://via.placeholder.com/360x380">
+                            <img src="http://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
+                        </a>
+                    </p>
+
+                    <p classs="catalog-item-action">
+                        <button class="button">В корзину</button>
+                        <button class="button">Добавить к сравнению</button>
+                    </p>
+
+                </li>
+
+                <li class="catalog-item">
+
+                    <h3>
+                        <a href="catalog-item.html">
+                            <span class="catalog-item-title">Селфи-палка «Следуй за мной»</span>
+                        </a>
+                    </h3>
+
+                    <p class="catalog-item-price">4 900 руб.</p>
+
+                    <p class="catalog-item-image">
+                        <a href="http://via.placeholder.com/360x380">
+                            <img src="http://via.placeholder.com/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                        </a>
+                    </p>
+
+                    <span class="catalog-item-new">new</span>
+
+                    <p classs="catalog-item-action">
+                        <button class="button">В корзину</button>
+                        <button class="button">Добавить к сравнению</button>
+                    </p>
+
+                </li>
+            </ul>
+
+            <footer class="catalog-footer pagination">
+                <button class="pagination-buttom pagination-buttom-back">Назад</button>
+
+                <ul class="pagination-list">
+                    <li class="pagination-item pagination-item-current"><a>1</a></li>
+                    <li class="pagination-item"><a href="#">2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                </ul>
+
+                <button class="pagination-buttom pagination-buttom-nex">Вперед</button>
+            </footer>
+
+        </section>
+
+
+    </main>
+
+    <footer class="main-footer">
+
+        <div class="footer-top">
+            <a class="footer-logo">
+                <img src="http://via.placeholder.com/160x30" width="160" height="30" alt="Интернет-магазин гаджетов «Девайс»">
+            </a>
+
+            <ul class="footer-user-navigation">
+                <li><a class="login-profile" href="#">Валентин Петухов</a></li>
+                <li><a class="login-link" href="#">Выйти</a></li>
+            </ul>
+
+            <ul class="footer-buying-navigation">
+                <li><a href="#">Сравнить</a></li>
+                <li><a href="#">Корзина</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-middle">
+            <p class="footer-address">г. Москва, ул. Строителей, 15</p>
+
+            <ul class="footer-navigation">
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
+        </div>
+
+        <div class="footer-bottom">
+            <ul class="social-button-list">
+                <li><a class="social-button" href="#">Вконтакте</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-copyright">
+            <a class="button" href="https://htmlacademy.ru">
+                <img src="http://via.placeholder.com/27x35" width="27" height="35" alt="HTML Academy">HTML Academy
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+</html>

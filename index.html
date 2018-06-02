@@ -13,11 +13,10 @@
                 <img src="http://via.placeholder.com/160x30" width="160" height="30" alt="Интернет-магазин гаджетов «Девайс»">
             </a>
 
-            <!-- 1) здесь кривое решение, т.к. элемент строчный -->
-            <input class="search" type="text" placeholder="Поиск по сайту">
+            <p class="search-navigation"><input type="text" placeholder="Поиск по сайту"></p>
 
             <ul class="user-navigation">
-                <li><a href="#">Войти</a></li>
+                <li><a class="login-link" href="#">Войти</a></li>
             </ul>
 
             <ul class="buying-navigation">
@@ -44,7 +43,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
 
         <article class="gadget-slider">
@@ -52,7 +51,9 @@
 
             <ul class="gadget-slider-list">
 
-                <li class="gadget-slide">
+                <!-- у открытого слайда состояние gadget-slide-current (не уверена, что этот класс нужен, но пусть пока будет) -->
+
+                <li class="gadget-slide gadget-slide-current">
                     <img src="http://via.placeholder.com/500x400" width="500" height="400" alt="Селфи-палка">
                     <span>01</span>
                     <p class="gadget-lead">Делай селфи, как Бен Стиллер!</p>
@@ -133,15 +134,17 @@
             <h2 class="visually-hidden">Услуги</h2>
 
             <div class="servise-slider-control">
-                <button class="button service-button">Доставка</button>
+                <!-- кажется, тут также можно использовать жутко стилизованный <input type="radio"> -->
+                <button class="button service-button service-button-current">Доставка</button>
                 <button class="button service-button">Гарантия</button>
                 <button class="button service-button">Кредит</button>
             </div>
 
             <ul class="service-slider-list">
                 <!-- иконки достаточно скромные, поэтому определены в background-image -->
+                <!-- у открытого слайда класс service-slide-current(не уверена, что этот класс нужен, но пусть пока будет) -->
 
-                <li class="service-slide">
+                <li class="service-slide service-slide-current">
                     <h3>Доставка</h3>
                     <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </li>
