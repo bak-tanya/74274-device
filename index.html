@@ -51,8 +51,6 @@
 
             <ul class="gadget-slider-list">
 
-                <!-- у открытого слайда состояние gadget-slide-current (не уверена, что этот класс нужен, но пусть пока будет) -->
-
                 <li class="gadget-slide gadget-slide-current">
                     <img src="http://via.placeholder.com/500x400" width="500" height="400" alt="Селфи-палка">
                     <span>01</span>
@@ -61,9 +59,9 @@
                     <a class="button" href="#">Подробнее</a>
                     <table class="gadget-details">
                         <tr>
-                            <th>8,5 м</th>
-                            <th>5 кг</th>
-                            <th>Карбон</th>
+                            <td>8,5 м</td>
+                            <td>5 кг</td>
+                            <td>Карбон</td>
                         </tr>
                         <tr>
                             <td>Длина палки</td>
@@ -81,7 +79,7 @@
                     <a class="button" href="#">Подробнее</a>
                     <table class="gadget-details">
                         <tr>
-                            <th>48 часов</th>
+                            <td>48 часов</td>
                         </tr>
                         <tr>
                             <td>Без подзарядки</td>
@@ -97,8 +95,8 @@
                     <a class="button" href="#">Подробнее</a>
                     <table class="gadget-details">
                         <tr>
-                            <th>800 м</th>
-                            <th>50 м</th>
+                            <td>800 м</td>
+                            <td>50 м</td>
                         </tr>
                         <tr>
                             <td>Дальность полета</td>
@@ -110,9 +108,9 @@
             </ul>
 
             <div class="gadget-slider-control">
-                <input class="gadget-slider-toggle" type="radio">
-                <input class="gadget-slider-toggle" type="radio">
-                <input class="gadget-slider-toggle" type="radio">
+                <input class="gadget-slider-toggle" type="radio" name="gadget" checked>
+                <input class="gadget-slider-toggle" type="radio" name="gadget">
+                <input class="gadget-slider-toggle" type="radio" name="gadget">
             </div>
 
         </article>
@@ -120,7 +118,6 @@
         <article class="category">
             <h2 class="visually-hidden">Популярные категории</h2>
             <ul class="category-list">
-                <!-- иконки категорий показались достаточно скромными, поэтому определила их как background-image -->
                 <li class="category-item"><a href="#">Виртуальная реальность</a></li>
                 <li class="category-item"><a href="#">Моноподы для селфи</a></li>
                 <li class="category-item"><a href="#">Экшн-камеры</a></li>
@@ -130,31 +127,29 @@
             </ul>
         </article>
 
-        <section class="service-slider">
-            <h2 class="visually-hidden">Услуги</h2>
+        <section class="info-slider">
+            <!-- фантазия скудная, заменила на сильно обобщающий заголовок -->
+            <h2 class="visually-hidden">Информация для покупателя</h2>
 
-            <div class="servise-slider-control">
-                <!-- кажется, тут также можно использовать жутко стилизованный <input type="radio"> -->
-                <button class="button service-button service-button-current">Доставка</button>
-                <button class="button service-button">Гарантия</button>
-                <button class="button service-button">Кредит</button>
+            <div class="info-slider-control">
+                <!-- убрала button, оставила <input type="radio">, он тут как-то правильней -->
+                <input class="info-slider-toggle" type="radio" name="info" checked>Доставка
+                <input class="info-slider-toggle" type="radio" name="info">Гарантия
+                <input class="info-slider-toggle" type="radio" name="info">Кредит
             </div>
 
-            <ul class="service-slider-list">
-                <!-- иконки достаточно скромные, поэтому определены в background-image -->
-                <!-- у открытого слайда класс service-slide-current(не уверена, что этот класс нужен, но пусть пока будет) -->
-
-                <li class="service-slide service-slide-current">
+            <ul class="info-slider-list">
+                <li class="info-slide info-slide-current">
                     <h3>Доставка</h3>
                     <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </li>
 
-                <li class="service-slide">
+                <li class="info-slide">
                     <h3>Гарантия</h3>
                     <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
                 </li>
 
-                <li class="service-slide">
+                <li class="info-slide">
                     <h3>Кредит</h3>
                     <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                 </li>
@@ -166,38 +161,46 @@
             <h2 class="visually-hidden">Популярные производители</h2>
             <ul class="producer-list">
                 <li class="producer-item">
-                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="dji">dji</a>
+                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="dji"></a>
                 </li>
                 <li class="producer-item">
-                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="SP Gadgets">SP Gadgets</a>
+                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="SP Gadgets"></a>
                 </li>
                 <li class="producer-item">
-                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="GoPro">GoPro</a>
+                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="GoPro"></a>
                 </li>
                 <li class="producer-item">
-                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="Vive">Vive</a>
+                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="Vive"></a>
                 </li>
             </ul>
         </article>
 
-        <section class="About-us">
-            <h2>О нас</h2>
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-            <ul>
-                <li>Деловые Линии</li>
-                <li>Автотрейдинг</li>
-                <li>ЖелДорЭкспедиция</li>
-            </ul>
-            <a class="button" href="#">Подробнее о нас</a>
-        </section>
+        <div class="shop-info">
 
-        <section class="contact">
-            <h2>Контакты</h2>
-            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <!-- тут будет карта -->
-            <a class="button" href="#">Напишите нам</a>
-        </section>
+            <ul class="shop-info-list">
+
+                <li class="shop-info-item">
+                    <h3>О нас</h3>
+                    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                    <ul>
+                        <li>Деловые Линии</li>
+                        <li>Автотрейдинг</li>
+                        <li>ЖелДорЭкспедиция</li>
+                    </ul>
+                    <a class="button" href="#">Подробнее о нас</a>
+                </li>
+
+                <li class="shop-info-item">
+                    <h3>Контакты</h3>
+                    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+                    <!-- карта -->
+                    <a class="button" href="#">Напишите нам</a>
+                </li>
+
+            </ul>
+
+        </div>
 
     </main>
 
@@ -236,27 +239,24 @@
                 <li><a class="social-button" href="#">Фейсбук</a></li>
                 <li><a class="social-button" href="#">Инстаграм</a></li>
             </ul>
-        </div>
 
-        <div class="footer-copyright">
-            <a class="button" href="https://htmlacademy.ru">
-                <img src="http://via.placeholder.com/27x35" width="27" height="35" alt="HTML Academy">HTML Academy
-            </a>
+            <a class="footer-copyright" href="https://htmlacademy.ru">HTML Academy</a>
+
         </div>
 
     </footer>
 
-    <section class="popup popup-question">
+    <div class="popup popup-question">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <!-- форму сказали пока не делать -->
-        <span class="modal-close">x</span>
-    </section>
+        <!-- форма -->
+        <span class="popup-close">x</span>
+    </div>
 
-    <section class="popup popup-map">
+    <div class="popup popup-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <!-- тут будет карта -->
-        <span class="modal-close">x</span>
-    </section>
+        <!-- карта -->
+        <span class="popup-close">x</span>
+    </div>
 
 </body>
 </html>
