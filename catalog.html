@@ -10,10 +10,13 @@
         <nav class="main-navigation">
 
             <a href="index.html" class="main-header-logo">
-                <img src="http://via.placeholder.com/160x30" width="160" height="30" alt="Интернет-магазин гаджетов «Девайс»">
+                <svg xmlns="http://www.w3.org/2000/svg" width="164" height="36"><path fill-rule="evenodd" d="M163.88 27.119v7.392h-21.264V.912h21.023v7.391h-13.29v5.568h12.082v7.296h-12.082v5.952h13.531zm-39.871.576c3.432 0 6.38-1.536 7.829-4.128l6.67 3.84c-2.9 4.752-8.313 7.776-14.499 7.776-10.197 0-17.591-7.584-17.591-17.472 0-9.888 7.394-17.471 17.591-17.471 6.138 0 11.551 3.024 14.499 7.775l-6.67 3.84c-1.498-2.592-4.397-4.128-7.829-4.128-5.992 0-9.858 3.984-9.858 9.984s3.866 9.984 9.858 9.984zM93.853.912h7.732v33.599h-7.732V.912zM69.592 34.511L58.574.912h8.457l7.491 24.719L82.012.912h8.458L79.451 34.511h-9.859zM35.376.912h21.022v7.391h-13.29v5.568H55.19v7.296H43.108v5.952H56.64v7.392H35.376V.912zM14.112 34.511H.58V.912h13.532c9.327 0 16.431 7.295 16.431 16.799s-7.104 16.8-16.431 16.8zm0-26.208h-5.8v18.816h5.8c5.316 0 8.988-3.648 8.988-9.408s-3.672-9.408-8.988-9.408z"/></svg>
             </a>
 
-            <p class="search-navigation"><input type="text" placeholder="Поиск по сайту"></p>
+            <form class="search-navigation">
+                <input type="text" placeholder="Поиск по сайту">
+                <input type="submit" value="Найти">
+            </form>
 
             <ul class="user-navigation">
                 <li><a class="login-profile" href="#">Валентин Петухов</a></li>
@@ -26,10 +29,10 @@
             </ul>
 
             <ul class="site-navigation">
-                <li>Каталог товаров
+                <li><a>Каталог товаров</a>
                     <ul class="catalog">
                         <li><a href="#">Виртуальная реальность</a></li>
-                        <li><a href="#">Моноподы для селфи</a></li>
+                        <li><a>Моноподы для селфи</a></li>
                         <li><a href="#">Экшн-камеры</a></li>
                         <li><a href="#">Фитнес-браслеты</a></li>
                         <li><a href="#">Умные часы</a></li>
@@ -47,7 +50,7 @@
     <main class="container">
         <h1 class="page-title">Моноподы для селфи</h1>
 
-        <ul class="breadcrums">
+        <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Каталог товаров</a></li>
             <li class="breadcrumbs-current">Моноподы для селфи</li>
@@ -88,8 +91,8 @@
                     <p class="catalog-item-price">500 руб</p>
 
                     <p class="catalog-item-image">
-                        <a href="http://via.placeholder.com/360x380">
-                            <img src="http://via.placeholder.com/360x380" width="360" height="380" alt="Любительская селфи-палка">
+                        <a href="img/item-1.jpg">
+                            <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                         </a>
                     </p>
 
@@ -109,8 +112,8 @@
                     <p class="catalog-item-price">2 500 руб.</p>
 
                     <p class="catalog-item-image">
-                        <a href="http://via.placeholder.com/360x380">
-                            <img src="http://via.placeholder.com/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
+                        <a href="img/item-2.jpg">
+                            <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                         </a>
                     </p>
 
@@ -130,8 +133,8 @@
                     <p class="catalog-item-price">1 500 руб.</p>
 
                     <p class="catalog-item-image">
-                        <a href="http://via.placeholder.com/360x380">
-                            <img src="http://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
+                        <a href="img/item-3.jpg">
+                            <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                         </a>
                     </p>
 
@@ -151,8 +154,8 @@
                     <p class="catalog-item-price">4 900 руб.</p>
 
                     <p class="catalog-item-image">
-                        <a href="http://via.placeholder.com/360x380">
-                            <img src="http://via.placeholder.com/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                        <a href="img/item-4.jpg">
+                            <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                         </a>
                     </p>
 
@@ -182,8 +185,8 @@
     <footer class="main-footer">
 
         <div class="footer-top">
-            <a class="footer-logo">
-                <img src="http://via.placeholder.com/160x30" width="160" height="30" alt="Интернет-магазин гаджетов «Девайс»">
+            <a class="footer-logo" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="164" height="36"><path fill-rule="evenodd" d="M163.88 27.119v7.392h-21.264V.912h21.023v7.391h-13.29v5.568h12.082v7.296h-12.082v5.952h13.531zm-39.871.576c3.432 0 6.38-1.536 7.829-4.128l6.67 3.84c-2.9 4.752-8.313 7.776-14.499 7.776-10.197 0-17.591-7.584-17.591-17.472 0-9.888 7.394-17.471 17.591-17.471 6.138 0 11.551 3.024 14.499 7.775l-6.67 3.84c-1.498-2.592-4.397-4.128-7.829-4.128-5.992 0-9.858 3.984-9.858 9.984s3.866 9.984 9.858 9.984zM93.853.912h7.732v33.599h-7.732V.912zM69.592 34.511L58.574.912h8.457l7.491 24.719L82.012.912h8.458L79.451 34.511h-9.859zM35.376.912h21.022v7.391h-13.29v5.568H55.19v7.296H43.108v5.952H56.64v7.392H35.376V.912zM14.112 34.511H.58V.912h13.532c9.327 0 16.431 7.295 16.431 16.799s-7.104 16.8-16.431 16.8zm0-26.208h-5.8v18.816h5.8c5.316 0 8.988-3.648 8.988-9.408s-3.672-9.408-8.988-9.408z"/></svg>
             </a>
 
             <ul class="footer-user-navigation">
@@ -216,7 +219,7 @@
                 <li><a class="social-button" href="#">Инстаграм</a></li>
             </ul>
 
-            <a class="footer-copyright" href="https://htmlacademy.ru">HTML Academy</a>
+            <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 
         </div>
 

@@ -10,10 +10,13 @@
         <nav class="main-navigation">
 
             <a class="main-header-logo">
-                <img src="http://via.placeholder.com/160x30" width="160" height="30" alt="Интернет-магазин гаджетов «Девайс»">
+                <svg xmlns="http://www.w3.org/2000/svg" width="164" height="36"><path fill-rule="evenodd" d="M163.88 27.119v7.392h-21.264V.912h21.023v7.391h-13.29v5.568h12.082v7.296h-12.082v5.952h13.531zm-39.871.576c3.432 0 6.38-1.536 7.829-4.128l6.67 3.84c-2.9 4.752-8.313 7.776-14.499 7.776-10.197 0-17.591-7.584-17.591-17.472 0-9.888 7.394-17.471 17.591-17.471 6.138 0 11.551 3.024 14.499 7.775l-6.67 3.84c-1.498-2.592-4.397-4.128-7.829-4.128-5.992 0-9.858 3.984-9.858 9.984s3.866 9.984 9.858 9.984zM93.853.912h7.732v33.599h-7.732V.912zM69.592 34.511L58.574.912h8.457l7.491 24.719L82.012.912h8.458L79.451 34.511h-9.859zM35.376.912h21.022v7.391h-13.29v5.568H55.19v7.296H43.108v5.952H56.64v7.392H35.376V.912zM14.112 34.511H.58V.912h13.532c9.327 0 16.431 7.295 16.431 16.799s-7.104 16.8-16.431 16.8zm0-26.208h-5.8v18.816h5.8c5.316 0 8.988-3.648 8.988-9.408s-3.672-9.408-8.988-9.408z"/></svg>
             </a>
 
-            <p class="search-navigation"><input type="text" placeholder="Поиск по сайту"></p>
+            <form class="search-navigation">
+                <input type="text" placeholder="Поиск по сайту">
+                <input type="submit" value="Найти">
+            </form>
 
             <ul class="user-navigation">
                 <li><a class="login-link" href="#">Войти</a></li>
@@ -25,7 +28,7 @@
             </ul>
 
             <ul class="site-navigation">
-                <li>Каталог товаров
+                <li><a>Каталог товаров</a>
                     <ul class="catalog">
                         <li><a href="#">Виртуальная реальность</a></li>
                         <li><a href="#">Моноподы для селфи</a></li>
@@ -49,60 +52,66 @@
         <article class="gadget-slider">
             <h2 class="visually-hidden">Популярные товары</h2>
 
-            <ul class="gadget-slider-list">
+            <ul class="slider-gadget-list">
 
-                <li class="gadget-slide gadget-slide-current">
-                    <img src="http://via.placeholder.com/500x400" width="500" height="400" alt="Селфи-палка">
-                    <span>01</span>
-                    <p class="gadget-lead">Делай селфи, как Бен Стиллер!</p>
-                    <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <a class="button" href="#">Подробнее</a>
-                    <table class="gadget-details">
-                        <tr>
-                            <td>8,5 м</td>
-                            <td>5 кг</td>
-                            <td>Карбон</td>
-                        </tr>
-                        <tr>
-                            <td>Длина палки</td>
-                            <td>Вес палки</td>
-                            <td>Материал</td>
-                        </tr>
-                    </table>
+                <li class="">
+                    <img src="img/slider_gadget_1.png" width="345" height="485" alt="Селфи-палка">
+                    <div>
+                        <span>01</span>
+                        <p class="">Делай селфи, как Бен Стиллер!</p>
+                        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                        <a class="button" href="#">Подробнее</a>
+                        <table class="">
+                            <tr>
+                                <td>8,5 м</td>
+                                <td>5 кг</td>
+                                <td>Карбон</td>
+                            </tr>
+                            <tr>
+                                <td>Длина палки</td>
+                                <td>Вес палки</td>
+                                <td>Материал</td>
+                            </tr>
+                        </table>
+                    </div>
                 </li>
 
-                <li class="gadget-slide">
-                    <img src="http://via.placeholder.com/500x400" width="500" height="400" alt="Селфи-палка">
-                    <span>02</span>
-                    <p class="gadget-lead">Худеем правильно!</p>
-                    <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                    <a class="button" href="#">Подробнее</a>
-                    <table class="gadget-details">
-                        <tr>
-                            <td>48 часов</td>
-                        </tr>
-                        <tr>
-                            <td>Без подзарядки</td>
-                        </tr>
-                    </table>
+                <li class="">
+                    <img src="img/slider_gadget_2.png" width="345" height="485" alt="Фитнес-браслеты">
+                    <div>
+                        <span>02</span>
+                        <p class="">Худеем правильно!</p>
+                        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                        <a class="button" href="#">Подробнее</a>
+                        <table class="">
+                            <tr>
+                                <td>48 часов</td>
+                            </tr>
+                            <tr>
+                                <td>Без подзарядки</td>
+                            </tr>
+                        </table>
+                    </div>
                 </li>
 
-                <li class="gadget-slide">
-                    <img src="http://via.placeholder.com/500x400" width="500" height="400" alt="Селфи-палка">
-                    <span>03</span>
-                    <p class="gadget-lead">Порхает как бабочка, жалит как пчела!</p>
-                    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                    <a class="button" href="#">Подробнее</a>
-                    <table class="gadget-details">
-                        <tr>
-                            <td>800 м</td>
-                            <td>50 м</td>
-                        </tr>
-                        <tr>
-                            <td>Дальность полета</td>
-                            <td>Радиус поражения</td>
-                        </tr>
-                    </table>
+                <li class="">
+                    <img src="img/slider_gadget_3.png" width="526" height="334" alt="Квадрокоптер">
+                    <div>
+                        <span>03</span>
+                        <p class="">Порхает как бабочка, жалит как пчела!</p>
+                        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                        <a class="button" href="#">Подробнее</a>
+                        <table class="">
+                            <tr>
+                                <td>800 м</td>
+                                <td>50 м</td>
+                            </tr>
+                            <tr>
+                                <td>Дальность полета</td>
+                                <td>Радиус поражения</td>
+                            </tr>
+                        </table>
+                    </div>
                 </li>
 
             </ul>
@@ -159,16 +168,16 @@
             <h2 class="visually-hidden">Популярные производители</h2>
             <ul class="producer-list">
                 <li class="producer-item">
-                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="dji"></a>
+                    <a href="#"><img src="img/producer_1.png" width="260" height="100" alt="dji"></a>
                 </li>
                 <li class="producer-item">
-                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="SP Gadgets"></a>
+                    <a href="#"><img src="img/producer_2.png" width="260" height="100" alt="SP Gadgets"></a>
                 </li>
                 <li class="producer-item">
-                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="GoPro"></a>
+                    <a href="#"><img src="img/producer_3.png" width="260" height="100" alt="GoPro"></a>
                 </li>
                 <li class="producer-item">
-                    <a href="#"><img src="http://via.placeholder.com/300x100" width="300" height="100" alt="Vive"></a>
+                    <a href="#"><img src="img/producer_4.png" width="210" height="100" alt="Vive"></a>
                 </li>
             </ul>
         </article>
@@ -189,7 +198,7 @@
             <section class="shop-info-contacts">
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                <!-- карта -->
+                <img src="img/map.png" width="560" height="222" alt="Карта">
                 <a class="button" href="#">Напишите нам</a>
             </section>
         </div>
@@ -200,7 +209,7 @@
 
         <div class="footer-top">
             <a class="footer-logo">
-                <img src="http://via.placeholder.com/160x30" width="160" height="30" alt="Интернет-магазин гаджетов «Девайс»">
+                <svg xmlns="http://www.w3.org/2000/svg" width="164" height="36"><path fill-rule="evenodd" d="M163.88 27.119v7.392h-21.264V.912h21.023v7.391h-13.29v5.568h12.082v7.296h-12.082v5.952h13.531zm-39.871.576c3.432 0 6.38-1.536 7.829-4.128l6.67 3.84c-2.9 4.752-8.313 7.776-14.499 7.776-10.197 0-17.591-7.584-17.591-17.472 0-9.888 7.394-17.471 17.591-17.471 6.138 0 11.551 3.024 14.499 7.775l-6.67 3.84c-1.498-2.592-4.397-4.128-7.829-4.128-5.992 0-9.858 3.984-9.858 9.984s3.866 9.984 9.858 9.984zM93.853.912h7.732v33.599h-7.732V.912zM69.592 34.511L58.574.912h8.457l7.491 24.719L82.012.912h8.458L79.451 34.511h-9.859zM35.376.912h21.022v7.391h-13.29v5.568H55.19v7.296H43.108v5.952H56.64v7.392H35.376V.912zM14.112 34.511H.58V.912h13.532c9.327 0 16.431 7.295 16.431 16.799s-7.104 16.8-16.431 16.8zm0-26.208h-5.8v18.816h5.8c5.316 0 8.988-3.648 8.988-9.408s-3.672-9.408-8.988-9.408z"/></svg>
             </a>
 
             <ul class="footer-user-navigation">
@@ -232,7 +241,7 @@
                 <li><a class="social-button" href="#">Инстаграм</a></li>
             </ul>
 
-            <a class="footer-copyright" href="https://htmlacademy.ru">HTML Academy</a>
+            <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 
         </div>
 
@@ -241,13 +250,13 @@
     <div class="popup popup-question">
         <h2 class="visually-hidden">Напишите нам</h2>
         <!-- форма -->
-        <span class="popup-close">x</span>
+        <span class="popup-close">Закрыть</span>
     </div>
 
     <div class="popup popup-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <!-- карта -->
-        <span class="popup-close">x</span>
+        <img src="img/map_big.png" width="960" height="559" alt="Карта">
+        <span class="popup-close">Закрыть</span>
     </div>
 
 </body>
