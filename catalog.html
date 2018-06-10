@@ -65,17 +65,11 @@
 
                 <fieldset>
                     <legend>Стоимость</legend>
-                    <div class="interval" tabindex="0">
-                        <svg class="interval_line" xmlns="http://www.w3.org/2000/svg" width="200" height="23" viewBox="0 0 200 23">
-                            <line class="interval__whole" x1="10" y1="10" x2="200" y2="10" stroke="#DBDBDB" stroke-width="2" />
-                            <line class="interval__chosen" x1="10" y1="10" x2="150" y2="10" stroke="#91C92F" stroke-width="2" />
-                        </svg>
-                        <span class="button_start"></span>
-                        <span class="number_start">от 0</span>
+                    <label for="price_start">Минимальная цена</label>
+                    <input type="number" name="price_start" id="price_start">
 
-                        <span class="button_end"></span>
-                        <span class="number_end">до 5000</span>
-                    </div>
+                    <label for="price_end">Максимальная цена</label>
+                    <input type="number" name="price_end" id="price_end">
                 </fieldset>
 
                 <fieldset>
@@ -169,7 +163,7 @@
                         <h3>Любительская селфи-палка</h3>
                     </a>
 
-                    <p class="catalog-item-price">500 руб</p>
+                    <p class="catalog-item-price">500 руб.</p>
 
                     <p class="catalog-item-image">
                         <img src="img/selfie_stick_unprof.png" width="360" height="380" alt="Любительская селфи-палка">
