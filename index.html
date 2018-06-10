@@ -9,23 +9,26 @@
     <header class="main-header">
         <nav class="main-navigation">
 
-            <a href="index.html" class="main-header-logo">
+            <a class="main-header-logo">
                 <img src="img/logo_black.png" width="164" height="36" alt="Интернет-магазин гаджетов «Девайс»">
             </a>
 
-            <form class="search-navigation">
-                <input type="text" placeholder="Поиск по сайту">
-                <button type="submit">Найти</button>
-            </form>
+            <div class="wrapper-navigations">
+                <form class="search-navigation">
+                    <label for="search" class="visually-hidden">Поиск по сайту</label>
+                    <input type="text" id="search" placeholder="Поиск по сайту">
+                    <button type="submit">Найти</button>
+                </form>
 
-            <ul class="user-navigation">
-                <li><a class="login-link" href="#">Войти</a></li>
-            </ul>
+                <ul class="user-navigation">
+                    <li><a class="login-link" href="#">Войти</a></li>
+                </ul>
 
-            <ul class="buying-navigation">
-                <li><a href="#">Сравнить</a></li>
-                <li><a href="#">Корзина</a></li>
-            </ul>
+                <ul class="buying-navigation">
+                    <li><a href="#">Сравнить</a></li>
+                    <li><a href="#">Корзина</a></li>
+                </ul>
+            </div>
 
             <ul class="site-navigation">
                 <li><a href="#">Каталог товаров</a>
@@ -47,7 +50,7 @@
     </header>
 
     <main class="container">
-        <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
+        <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
 
         <article class="gadget-slider">
             <h2 class="visually-hidden">Популярные товары</h2>
@@ -55,7 +58,7 @@
             <ul class="slider-gadget-list">
 
                 <li class="">
-                    <img src="img/slider_gadget_1.png" width="384" height="486" alt="Селфи-палка">
+                    <img src="img/slider_gadget_monopod.png" width="384" height="486" alt="Селфи-палка">
                     <div>
                         <span>01</span>
                         <p class="">Делай селфи, как Бен Стиллер!</p>
@@ -77,7 +80,7 @@
                 </li>
 
                 <li class="">
-                    <img src="img/slider_gadget_2.png" width="345" height="485" alt="Фитнес-браслеты">
+                    <img src="img/slider_gadget_fitbit.png" width="345" height="485" alt="Фитнес-браслеты">
                     <div>
                         <span>02</span>
                         <p class="">Худеем правильно!</p>
@@ -95,7 +98,7 @@
                 </li>
 
                 <li class="">
-                    <img src="img/slider_gadget_3.png" width="526" height="334" alt="Квадрокоптер">
+                    <img src="img/slider_gadget_quadcopter.png" width="526" height="334" alt="Квадрокоптер">
                     <div>
                         <span>03</span>
                         <p class="">Порхает как бабочка, жалит как пчела!</p>
@@ -117,9 +120,9 @@
             </ul>
 
             <div class="gadget-slider-control">
-                <input class="gadget-slider-toggle" type="radio" name="gadget" checked>
-                <input class="gadget-slider-toggle" type="radio" name="gadget">
-                <input class="gadget-slider-toggle" type="radio" name="gadget">
+                <button class="gadget-slider-toggle gadget-slider-current" type="button"><span class="visually-hidden">Текущий слайд:</span>Слайд с моноподом</button>
+                <button class="gadget-slider-toggle" type="button">Слайд с фитнес-браслетами</button>
+                <button class="gadget-slider-toggle" type="button">Слайд с квадрокоптером</button>
             </div>
 
         </article>
@@ -140,9 +143,9 @@
             <h2 class="visually-hidden">Информация для покупателя</h2>
 
             <div class="info-slider-control">
-                <input class="info-slider-toggle" type="radio" name="info" checked>Доставка
-                <input class="info-slider-toggle" type="radio" name="info">Гарантия
-                <input class="info-slider-toggle" type="radio" name="info">Кредит
+                <button class="info-slider-toggle toggle-current" type="button"><span class="visually-hidden">Текущий слайд:</span>Доставка</button>
+                <button class="info-slider-toggle" type="button">Гарантия</button>
+                <button class="info-slider-toggle" type="button">Кредит</button>
             </div>
 
             <ul class="info-slider-list">
@@ -166,20 +169,14 @@
 
         <article class="producer">
             <h2 class="visually-hidden">Популярные производители</h2>
+
             <ul class="producer-list">
-                <li class="producer-item">
-                    <a href="#"><img src="img/producer_1.png" width="260" height="200" alt="dji"></a>
-                </li>
-                <li class="producer-item">
-                    <a href="#"><img src="img/producer_2.png" width="260" height="200" alt="SP Gadgets"></a>
-                </li>
-                <li class="producer-item">
-                    <a href="#"><img src="img/producer_3.png" width="260" height="200" alt="GoPro"></a>
-                </li>
-                <li class="producer-item">
-                    <a href="#"><img src="img/producer_4.png" width="260" height="200" alt="Vive"></a>
-                </li>
+                <li class="producer-item"><a href="#">DJI</a></li>
+                <li class="producer-item"><a href="#">SP Gadgets</a></li>
+                <li class="producer-item"><a href="#">GoPro</a></li>
+                <li class="producer-item"><a href="#">Vive</a></li>
             </ul>
+
         </article>
 
         <div class="shop-info">
@@ -198,7 +195,7 @@
             <section class="shop-info-contacts">
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                <img src="img/map.png" width="560" height="222" alt="Карта">
+                <img src="img/map.png" width="560" height="222" alt="Адрес компании: г. Москва, ул. Строителей, 15">
                 <a class="button" href="#">Напишите нам</a>
             </section>
         </div>
@@ -208,7 +205,7 @@
     <footer class="main-footer">
 
         <div class="footer-top">
-            <a href="index.html" class="main-header-logo">
+            <a class="main-header-logo">
                 <img src="img/logo_yellow.png" width="163" height="36" alt="Интернет-магазин гаджетов «Девайс»">
             </a>
 
@@ -247,16 +244,43 @@
 
     </footer>
 
-    <div class="popup popup-question">
+    <div class="popup write-us">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <!-- форма -->
-        <button class="button" type="button">Закрыть</button>
+
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+
+            <div class="form__wrapper">
+
+                <div class="form__item">
+                    <label class="form__label" for="write-us__name">Ваше имя:</label>
+                    <input class="form__element" type="text" id="write-us__name" name="write-us__name" placeholder="Имя Фамилия">
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="write-us__email">Ваш e-mail:</label>
+                    <input class="form__element" type="email" id="write-us__email" name="write-us__email" placeholder="email@example.com">
+                </div>
+
+            </div>
+
+            <div class="form__item">
+                <label class="form__label" for="write-us__text">Текст письма:</label>
+                <textarea class="form__element" id="write-us__text" name="write-us__text" rows="8" placeholder="В свободной форме"></textarea>
+            </div>
+
+            <button class="button" type="submit">Отправить</button>
+
+        </form>
+
+        <button class="popup__close" type="button">Закрыть</button>
     </div>
 
-    <div class="popup popup-map">
+    <div class="popup map">
+
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/map_big.png" width="960" height="559" alt="Карта">
-        <button class="button" type="button">Закрыть</button>
+        <img src="img/map_big.png" width="960" height="559" alt="Адрес компании: г. Москва, ул. Строителей, 15">
+        <button class="popup__close" type="button">Закрыть</button>
+
     </div>
 
 </body>

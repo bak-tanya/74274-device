@@ -74,3 +74,52 @@ rgba(240,197,46,1) - желтый фон категорий товаров на�
 #ebebeb - пагинация
 
 */
+
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
+
+
+/* --------------------------- interval -------------------------------------- */
+.interval {
+    position: relative;
+    height:40px;
+}
+
+.interval_line{
+    position:absolute;
+}
+
+.button_start,
+.button_end{
+    display:block;
+    position:absolute;
+    height:23px;
+    width:20px;
+    background-image: url("../img/filter-button.svg");
+}
+
+.button_end{
+    left:150px;
+}
+
+.number_start,
+.number_end{
+    position:absolute;
+    top:25px;
+}
+
+.number_end{
+    left:140px;
+}
+
+/* -------------------------------------------------------------------------- */

@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -14,7 +15,8 @@
             </a>
 
             <form class="search-navigation">
-                <input type="text" placeholder="Поиск по сайту">
+                <label for="search" class="visually-hidden">Поиск по сайту</label>
+                <input type="text" id="search" placeholder="Поиск по сайту">
                 <button type="submit">Найти</button>
             </form>
 
@@ -32,7 +34,7 @@
                 <li><a href="#">Каталог товаров</a>
                     <ul class="catalog">
                         <li><a href="#">Виртуальная реальность</a></li>
-                        <li><a>Моноподы для селфи</a></li>
+                        <li><a><span class="visually-hidden">Текущий пункт:</span>Моноподы для селфи</a></li>
                         <li><a href="#">Экшн-камеры</a></li>
                         <li><a href="#">Фитнес-браслеты</a></li>
                         <li><a href="#">Умные часы</a></li>
@@ -58,7 +60,88 @@
 
         <aside class="filters">
             <h2>Фильтр:</h2>
-            <!-- форма -->
+
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+
+                <fieldset>
+                    <legend>Стоимость</legend>
+                    <div class="interval" tabindex="0">
+                        <svg class="interval_line" xmlns="http://www.w3.org/2000/svg" width="200" height="23" viewBox="0 0 200 23">
+                            <line class="interval__whole" x1="10" y1="10" x2="200" y2="10" stroke="#DBDBDB" stroke-width="2" />
+                            <line class="interval__chosen" x1="10" y1="10" x2="150" y2="10" stroke="#91C92F" stroke-width="2" />
+                        </svg>
+                        <span class="button_start"></span>
+                        <span class="number_start">от 0</span>
+
+                        <span class="button_end"></span>
+                        <span class="number_end">до 5000</span>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Цвет</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="color__black" checked>
+                                <span class="checkbox-indicator"></span>
+                                Черный
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="color__white">
+                                <span class="checkbox-indicator"></span>
+                                Белый
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="color__blue" checked>
+                                <span class="checkbox-indicator"></span>
+                                Синий
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="color__red" checked>
+                                <span class="checkbox-indicator"></span>
+                                Красный
+                            </label>
+                        </li>
+
+                        <li>
+                            <label>
+                                <input class="visually-hidden" type="checkbox" name="color__pink">
+                                <span class="checkbox-indicator"></span>
+                                Розовый
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Bluetooth</legend>
+
+                    <label>
+                        <input class="visually-hidden" type="radio" name="filter__bluetooth" value="yes" checked>
+                        <span class="radiobutton-indicator"></span>
+                        Есть
+                    </label>
+
+                    <label>
+                        <input class="visually-hidden" type="radio" name="filter__bluetooth" value="no">
+                        <span class="radiobutton-indicator"></span>
+                        Нет
+                    </label>
+                </fieldset>
+
+                <button class="button" type="submit">Показать</button>
+            </form>
+
         </aside>
 
         <section class="catalog">
@@ -68,14 +151,14 @@
                 <h3>Cортировка:</h3>
 
                 <ul class="selection-type-list">
-                    <li><a class="button button-active">По цене</a></li>
+                    <li><a class="button button-active"><span class="visually-hidden">Выбранный критерий:</span>По цене</a></li>
                     <li><a class="button" href="#">По типу</a></li>
                     <li><a class="button" href="#">По популярности</a></li>
                 </ul>
 
                 <ul class="selection-direction-list">
                     <li><a class="button" href="#">По возрастанию</a></li>
-                    <li><a class="button button-active">По убыванию</a></li>
+                    <li><a class="button button-active"><span class="visually-hidden">Выбранный критерий:</span>По убыванию</a></li>
                 </ul>
             </header>
 
@@ -89,7 +172,7 @@
                     <p class="catalog-item-price">500 руб</p>
 
                     <p class="catalog-item-image">
-                        <img src="img/item_1.png" width="360" height="380" alt="Любительская селфи-палка">
+                        <img src="img/selfie_stick_unprof.png" width="360" height="380" alt="Любительская селфи-палка">
                     </p>
 
                     <p class="catalog-item-action">
@@ -106,7 +189,7 @@
                     <p class="catalog-item-price">2 500 руб.</p>
 
                     <p class="catalog-item-image">
-                        <img src="img/item_2.png" width="360" height="380" alt="Профессиональная селфи-палка">
+                        <img src="img/selfie_stick_prof.png" width="360" height="380" alt="Профессиональная селфи-палка">
                     </p>
 
                     <p class="catalog-item-action">
@@ -123,7 +206,7 @@
                     <p class="catalog-item-price">1 500 руб.</p>
 
                     <p class="catalog-item-image">
-                        <img src="img/item_3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                        <img src="img/selfie_stick_unsink.png" width="360" height="380" alt="Непотопляемая селфи-палка">
                     </p>
 
                     <p class="catalog-item-action">
@@ -140,7 +223,7 @@
                     <p class="catalog-item-price">4 900 руб.</p>
 
                     <p class="catalog-item-image">
-                        <img src="img/item_4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                        <img src="img/selfie_stick_follow_me.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                     </p>
 
                     <span class="catalog-item-new">new</span>
@@ -155,7 +238,7 @@
             <footer class="catalog-footer pagination">
                 <ul class="pagination-list">
                     <li class="pagination-item pagination-item-back"><a>Назад</a></li>
-                    <li class="pagination-item pagination-item-current"><a>1</a></li>
+                    <li class="pagination-item pagination-item-current"><a><span class="visually-hidden">Текущая страница:</span>1</a></li>
                     <li class="pagination-item"><a href="#">2</a></li>
                     <li class="pagination-item"><a href="#">3</a></li>
                     <li class="pagination-item pagination-item-next"><a href="#">Вперед</a></li>
