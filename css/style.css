@@ -1,36 +1,36 @@
 @font-face{
     font-family: 'Gilroy';
-    src: url(../fonts/gilroylight.woff2) format('woff2');
-         url(../fonts/gilroylight.woff) format('woff');
+    src: url('../fonts/gilroylight.woff2') format('woff2');
+         url('../fonts/gilroylight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Gilroy';
-    src: url(../fonts/gilroyextrabold.woff2) format('woff2');
-         url(../fonts/gilroyextrabold.woff) format('woff');
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+         url('../fonts/gilroyextrabold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'OpenSans';
-    src: url(../fonts/opensanslight.woff2) format('woff2');
-         url(../fonts/opensanslight.woff) format('woff');
+    src: url('../fonts/opensanslight.woff2') format('woff2');
+         url('../fonts/opensanslight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'OpenSans';
-    src: url(../fonts/opensans.woff2) format('woff2');
-         url(../fonts/opensans.woff) format('woff');
+    src: url('../fonts/opensans.woff2') format('woff2');
+         url('../fonts/opensans.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
-.visually-hidden {
+.visually-hidden{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -166,7 +166,7 @@
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
     color: rgba(0,0,0,1);
 }
 
@@ -178,7 +178,7 @@
     opacity: 0.3;
 }
 
-.menu-catalog > li{
+.menu-catalog>li{
     list-style: none;
 }
 
@@ -186,13 +186,13 @@
     background-color: rgba(247,226,150,1);
 }
 
-.menu-catalog_item {
+.menu-catalog_item{
     font-family: 'OpenSans', Arial, serif;
     text-decoration: none;
     color: rgba(0,0,0,1);
 }
 
-.menu-catalog_item:hover {
+.menu-catalog_item:hover{
     opacity: 0.6;
 }
 
@@ -200,7 +200,7 @@
     opacity: 0.3;
 }
 
-.gadget_list > li{
+.gadget_list>li{
     list-style: none;
 }
 
@@ -241,7 +241,7 @@
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
     color: rgba(0,0,0,1);
     background-color: transparent;
     border: none;
@@ -255,7 +255,7 @@
     color: rgba(0,0,0,0.3);
 }
 
-.category_list > li{
+.category_list>li{
     list-style: none;
 }
 
@@ -263,7 +263,7 @@
     text-decoration: none;
 }
 
-.category_title {
+.category_title{
     font-size: 18px;
     line-height: 24px;
     color: rgba(0,0,0,1);
@@ -273,42 +273,33 @@
     width: 160px;
     height: 160px;
     background-color: rgba(240,197,46,0.5);
-}
-
-.category_img-vr{
-    background-image: url('../img/category-vr.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
+.category_img-vr{
+    background-image: url('../img/category-vr.png');
+}
+
 .category_img-monopod{
     background-image: url('../img/category-monopod.png');
-    background-repeat: no-repeat;
     background-position: 50% 100%;
 }
 
 .category_img-camera{
     background-image: url('../img/category-camera.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 .category_img-fitbit{
     background-image: url('../img/category-fitbit.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 .category_img-watch{
     background-image: url('../img/category-watch.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
-.category_img-quadcopter {
+.category_img-quadcopter{
     background-image: url('../img/category-quadcopter.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 
 .category_link:hover .category_img{
@@ -327,7 +318,7 @@
     background: linear-gradient(transparent 100px, rgba(229,229,229,1) 100px);
 }
 
-.info_list > li{
+.info_list>li{
     list-style: none;
 }
 
@@ -342,7 +333,7 @@
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
     color: rgba(0,0,0,1);
     background-color: transparent;
     border: none;
@@ -430,7 +421,7 @@
     color: rgba(0,0,0,1);
 }
 
-.shop-delivery_list > li{
+.shop-delivery_list>li{
     list-style: circle;
     font-weight: bold;
     color: rgba(0,0,0,1);
@@ -522,7 +513,7 @@
     border: 3px solid rgba(240,197,46,0.5);
 }
 
-.form_element:invalid {
+.form_element:invalid{
     background-color: #F6DADA;
     border: 3px solid #F6DADA;
 }
@@ -533,7 +524,7 @@
     color: rgba(0,0,0,1);
 }
 
-.breadcrumbs > li{
+.breadcrumbs>li{
     list-style: none;
 }
 
@@ -565,7 +556,7 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
@@ -581,7 +572,7 @@
     color: rgba(0,0,0,1);
 }
 
-.filter_list > li{
+.filter_list>li{
     list-style: none;
 }
 
@@ -600,12 +591,12 @@
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
     color: rgba(0,0,0,1);
 }
 
-.selection-type-list > li,
-.selection-direction-list > li{
+.selection-type-list>li,
+.selection-direction-list>li{
     list-style: none;
 }
 
@@ -617,7 +608,7 @@
     color: rgba(0,0,0,0.3);
 }
 
-.selection_button:hover {
+.selection_button:hover{
     color: rgba(0,0,0,0.6);
 }
 
@@ -634,7 +625,7 @@
 }
 
 .product_link{
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .product_name{
@@ -680,8 +671,8 @@
     background-color: #EBEBEB;
 }
 
-.pagination_list > li{
-    list-style:none;
+.pagination_list>li{
+    list-style: none;
 }
 
 .pagination_item-back,
@@ -691,7 +682,7 @@
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
     color: rgba(0,0,0,1);
 }
 
@@ -710,7 +701,7 @@
     line-height: 24px;
     font-weight: bold;
     text-decoration: none;
-    letter-spacing: 3.5px;
+    letter-spacing: 3px;
     color: rgba(0,0,0,0.3);
 }
 
