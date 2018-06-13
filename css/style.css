@@ -1,113 +1,528 @@
-/*
-Текст:
-rgba(0,0,0,1) - заголовки
-rgba(70,70,70,1) - основной текст
-
-все элементы header (кроме placeholder-а и "Найти"):
-rgba(0,0,0,1) - покой
-rgba(0,0,0,0.6) - наведение
-rgba(0,0,0,0.3) - нажатие
-
-яркие кнопки:
-rgba(0,0,0,1) - покой, наведение
-rgba(0,0,0,0.3) - нажатие
-
-кнопки в "Информация для покупателей":
-rgba(0,0,0,1) - покой, наведение
-#f7e184 - нажатие
-
-форма:
-rgba(70,70,70,0.4) - основной
-rgba(70,70,70,1) - фокус
-
-breadcrumbs:
-rgba(0,0,0,0.3) - покой
-rgba(0,0,0,0.6) - наведение
-rgba(0,0,0,0.1) - нажатие
-
-сортировка:
-rgba(0,0,0,0.3) - покой
-rgba(0,0,0,0.6) - наведение
-rgba(0,0,0,1) - нажатие
-
-элементы фильтра:
-rgba(0,0,0,1) - основной
-rgba(0,0,0,0.2) - стоимость
-#a6a6a6 - disabled
-
-кнопка "Добавить к сравнению":
-rgba(0,0,0,0.5) - покой
-rgba(0,0,0,1) - наведение
-rgba(0,0,0,0.2) - нажатие
-
-пагинация:
-rgba(0,0,0,0.3) - основной
-rgba(0,0,0,1) - текушая стр
-rgba(0,0,0,1) - "вперед/назад"
-rgba(0,0,0,0.3) - disabled "вперед/назад"
-
-Футер логотип, иконки, логотип академии
-rgba(255,198,0,1) - покой
-rgba(255,198,0,0.6) - наведение
-rgba(255,198,0,0.3) - нажатие
-
-Футер меню по пользователю и покупкам
-rgba(255,255,255,0.7) - покой
-rgba(255,255,255,1) - наведение
-rgba(255,255,255,0.3) - нажатие
-
-Футер навигация по сайту
-rgba(255,255,255,1) - покой
-rgba(255,255,255,0.6) - наведение
-rgba(255,255,255,0.3) - нажатие
-
-Фон:
-rgba(240,197,46,0.5) - желтый фон header-a
-rgba(240,197,46,0,5) - желтый фон кнопок
-rgba(240,197,46,0.5) - желтый фон категорий товаров покой
-rgba(240,197,46,1) - желтый фон категорий товаров наведение,нажатие
-#e5e5e5 - серый фон слайдера "Информация для полупателей"
-#464646 - серыий фон футера
-#eeeeee - серый цвет фильтра в каталоге
-#ebebeb - серый цвет сортировки в каталоге
-#dcdcdc - серый цвет поля "Фильтр" в каталоге
-#ebebeb - пагинация
-
-*/
-
-/*
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+@font-face{
+    font-family: 'Gilroy';
+    src: url(../fonts/gilroylight.woff2) format('woff2');
+         url(../fonts/gilroylight.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-*/
 
-.producer-logo:hover{
-    opacity:0;
+@font-face{
+    font-family: 'Gilroy';
+    src: url(../fonts/gilroyextrabold.woff2) format('woff2');
+         url(../fonts/gilroyextrabold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'OpenSans';
+    src: url(../fonts/opensanslight.woff2) format('woff2');
+         url(../fonts/opensanslight.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'OpenSans';
+    src: url(../fonts/opensans.woff2) format('woff2');
+         url(../fonts/opensans.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy', Arial, serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(70,70,70,1);
+}
+
+.header{
+    color: rgba(0,0,0,1);
+    background: linear-gradient(transparent 40px, rgba(247,226,150,1) 40px);
+}
+
+.header_logo:hover{
+    opacity: 0.6;
+}
+
+.header_logo:active{
+    opacity: 0.3;
+}
+
+.search_element{
+    font-family: 'OpenSans', Arial, serif;
+    line-height: 30px;
+    color: rgba(0,0,0,0.3);
+    background-color: transparent;
+    border: none;
+}
+
+.search_element:hover{
+    color: rgba(0,0,0,0.6);
+}
+
+.search_element:focus{
+    color: rgba(0,0,0,1);
+    border-bottom: 1px solid rgba(0,0,0,1);
+}
+
+.search_button{
+    font-family: 'OpenSans', Arial, serif;
+    font-size: inherit;
+    line-height: inherit;
+    color: rgba(0,0,0,1);
+    background-color: transparent;
+    border: 1px solid rgba(0,0,0,1);
+}
+
+.search_button:hover{
+    color: rgba(255,255,255,1);
+    background-color: rgba(0,0,0,1);
+}
+
+.search_button:active{
+    color: rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,1);
+}
+
+.menu-user>li{
+    list-style: none;
+}
+
+.menu-user_enter,
+.menu-user_profile{
+    font-family: 'OpenSans', Arial, serif;
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+ }
+
+.menu-user_enter:hover,
+.menu-user_profile:hover{
+    opacity: 0.6;
+}
+
+.menu-user_enter:active,
+.menu-user_profile:active{
+    opacity: 0.3;
+}
+
+.menu-user_exit{
+    font-family: 'OpenSans', Arial, serif;
+    text-decoration: none;
+    color: rgba(0,0,0,0.3);
+}
+
+.menu-user_exit:hover{
+    color: rgba(0,0,0,0.6);
+}
+
+.menu-user_exit:active{
+    color: rgba(0,0,0,1);
+}
+
+.menu-buying>li{
+    list-style: none;
+}
+
+.menu-buying_compare,
+.menu-buying_cart{
+    font-family: 'OpenSans', Arial, serif;
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+
+.menu-buying_compare:hover,
+.menu-buying_cart:hover{
+    opacity: 0.6;
+}
+
+.menu-buying_compare:active,
+.menu-buying_cart:active{
+    opacity: 0.3;
+}
+
+.menu-site{
+    list-style: none;
+}
+
+.menu-site_item{
+    font-family: 'Gilroy', Arial, serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    color: rgba(0,0,0,1);
+}
+
+.menu-site_item:hover{
+    opacity: 0.6;
+}
+
+.menu-site_item:active{
+    opacity: 0.3;
+}
+
+.menu-catalog > li{
+    list-style: none;
+}
+
+.menu-catalog{
+    background-color: rgba(247,226,150,1);
+}
+
+.menu-catalog_item {
+    font-family: 'OpenSans', Arial, serif;
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+
+.menu-catalog_item:hover {
+    opacity: 0.6;
+}
+
+.menu-catalog_item:active{
+    opacity: 0.3;
+}
+
+.gadget_list > li{
+    list-style: none;
+}
+
+.gadget_number{
+    font-size: 179px;
+    line-height: 170px;
+    font-weight: bold;
+    color: rgba(255,255,255,1);
+}
+
+.gadget_lead{
+    font-size: 47px;
+    line-height: 56px;
+    font-weight: bold;
+    color: rgba(0,0,0,1);
+}
+
+.gadget_text{
+    font-family: 'OpenSans', Arial, serif;
+}
+
+.gadget_data{
+    font-size: 36px;
+    line-height: 48px;
+    color: rgba(0,0,0,1);
+}
+
+.gadget_character{
+    font-family: 'OpenSans', Arial, serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.button{
+    font-family: 'Gilroy', Arial, serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3.5px;
+    color: rgba(0,0,0,1);
+    background-color: transparent;
+    border: none;
+}
+
+.button:hover{
+    background-color: rgba(240,197,46,1);
+}
+
+.button:active{
+    color: rgba(0,0,0,0.3);
+}
+
+.category_list > li{
+    list-style: none;
+}
+
+.category_link{
+    text-decoration: none;
+}
+
+.category_title {
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0,0,0,1);
+}
+
+.category_img{
+    width: 160px;
+    height: 160px;
+    background-color: rgba(240,197,46,0.5);
+}
+
+.category_img-vr{
+    background-image: url('../img/category-vr.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.category_img-monopod{
+    background-image: url('../img/category-monopod.png');
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+.category_img-camera{
+    background-image: url('../img/category-camera.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.category_img-fitbit{
+    background-image: url('../img/category-fitbit.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.category_img-watch{
+    background-image: url('../img/category-watch.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.category_img-quadcopter {
+    background-image: url('../img/category-quadcopter.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.category_link:hover .category_img{
+    background-color: rgba(240,197,46,1);
+}
+
+.category_link:active .category_img::before{
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    background-color: rgba(240,197,46,0.7);
+}
+
+.info{
+    background: linear-gradient(transparent 100px, rgba(229,229,229,1) 100px);
+}
+
+.info_list > li{
+    list-style: none;
+}
+
+.info_control{
+    border-right: 7px solid rgba(0,0,0,1);
+}
+
+.info_button{
+    font-family: 'Gilroy', Arial, serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3.5px;
+    color: rgba(0,0,0,1);
+    background-color: transparent;
+    border: none;
+}
+
+.info_button:hover{
+    background-color: rgba(240,197,46,1);
+}
+
+.info_button:active,
+.info_button-current{
+    background-color: rgba(0,0,0,1);
+    color: rgba(247,225,132,1);
+}
+
+.info_title{
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: bold;
+    color: rgba(0,0,0,1);
+}
+
+.info_text{
+    font-family: 'OpenSans', Arial, serif;
+}
+
+.info_img-delivery{
+    background-image: url('../img/info_delivery.svg');
+    background-repeat: no-repeat;
+    width: 136px;
+    height: 164px;
+}
+
+.info_img-warranty{
+    background-image: url('../img/info_warranty.svg');
+    background-repeat: no-repeat;
+    width: 171px;
+    height: 194px;
+}
+
+.info_img-credit{
+    background-image: url('../img/info_credit.svg');
+    background-repeat: no-repeat;
+    width: 156px;
+    height: 186px;
+}
+
+.producer_item{
+    list-style: none;
+}
+
+.producer_logo:hover{
+    opacity: 0;
 }
 
 .producer_dju:hover{
-    background-image: url(../img/producer_dji_br.png);
-    background-repeat:no-repeat;
+    background-image: url('../img/producer_dji_br.png');
+    background-repeat: no-repeat;
 }
 
 .producer_gopro:hover{
     background-image: url(../img/producer_gopro_br.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 .producer_sp_gadgets:hover{
     background-image: url(../img/producer_sp_gadgets_br.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 .producer_vive:hover{
     background-image: url(../img/producer_vive_br.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
+}
+
+.shop_title{
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: bold;
+    color: rgba(0,0,0,1);
+}
+
+.shop_text{
+    font-family: 'OpenSans', Arial, serif;
+    color: rgba(0,0,0,1);
+}
+
+.shop-delivery_list > li{
+    list-style: circle;
+    font-weight: bold;
+    color: rgba(0,0,0,1);
+}
+
+.footer{
+    background-color: rgba(70,70,70,1);
+}
+
+.footer_logo:hover{
+    opacity: 0.6;
+}
+
+.footer_logo:active{
+    opacity: 0.3;
+}
+
+.footer .menu-user_profile,
+.footer .menu-user_enter{
+    color: rgba(255,255,255,1);
+}
+
+.footer .menu-user_profile:hover,
+.footer .menu-user_enter:hover{
+    opacity: 0.6;
+}
+
+.footer .menu-user_profile:active,
+.footer .menu-user_enter:active{
+    opacity: 0.3;
+}
+
+.footer .menu-user_exit{
+    color: rgba(255,255,255,0.3);
+}
+
+.footer .menu-user_exit:hover{
+    color: rgba(255,255,255,0.6);
+}
+
+.footer .menu-user_exit:active{
+    color: rgba(255,255,255,1);
+}
+
+.footer .menu-buying_compare,
+.footer .menu-buying_cart{
+    color: rgba(255,255,255,1);
+}
+
+.footer_address{
+    font-family: 'OpenSans', Arial, serif;
+    color: rgba(255,255,255,1);
+}
+
+.footer_phone{
+    font-family: 'OpenSans', Arial, serif;
+    color: rgba(255,255,255,1);
+}
+
+.footer .menu-site_item{
+    color: rgba(255,255,255,1);
+}
+
+.form_label{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: rgba(0,0,0,1);
+}
+
+.form_element{
+    font-family: 'OpenSans', Arial, serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(70,70,70,0.4);
+    background-color: rgba(242,242,242,1);
+    border: 3px solid rgba(242,242,242,1);
+    outline: none;
+}
+
+.form_element:hover{
+     background-color: rgba(235,235,235,1);
+     border: 3px solid rgba(235,235,235,1);
+ }
+
+.form_element:focus{
+    color: rgba(70,70,70,1);
+    background-color: rgba(255,255,255,1);
+    border: 3px solid rgba(240,197,46,0.5);
+}
+
+.form_element:invalid {
+    background-color: rgba(246,218,218,1);
+    border: 3px solid rgba(246,218,218,1);
 }
