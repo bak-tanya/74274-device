@@ -8,7 +8,7 @@
 </head>
 <body class="page iner_page">
 
-    <header class="page_header header">
+    <header class="header">
         <nav class="page_menu">
 
             <a class="header_logo" href="index.html">
@@ -50,7 +50,7 @@
         </nav>
     </header>
 
-    <main class="page_container">
+    <main class="container">
         <h1 class="page_title">Моноподы для селфи</h1>
 
         <ul class="breadcrumbs">
@@ -60,24 +60,28 @@
         </ul>
 
         <div class="catalog_wrapper">
+
             <aside class="filter_wrapper">
+
                 <header class="filter_header">
                     <h2 class="filter_title">Фильтр:</h2>
                 </header>
 
                 <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-
                     <fieldset class="filter_fieldset">
-                        <h4 class="fieldset_property">Стоимость</h4>
+                        <h4 class="filter_property">Стоимость</h4>
+
                         <label for="price_start">Минимальная цена</label>
                         <input type="number" name="price_start" id="price_start">
 
                         <label for="price_end">Максимальная цена</label>
                         <input type="number" name="price_end" id="price_end">
+
                     </fieldset>
 
                     <fieldset class="filter_fieldset">
-                        <h4 class="fieldset_property">Цвет</h4>
+                        <h4 class="filter_property">Цвет</h4>
+
                         <ul class="filter_list">
                             <li>
                                 <label>
@@ -122,7 +126,7 @@
                     </fieldset>
 
                     <fieldset class="filter_fieldset">
-                        <h4 class="fieldset_property">Bluetooth</h4>
+                        <h4 class="filter_property">Bluetooth</h4>
 
                         <ul class="filter_list">
                             <li>
@@ -151,7 +155,7 @@
             <section class="catalog">
                 <h2 class="visually-hidden">Каталог</h2>
 
-                <header class="catalog_header selection">
+                <header class="selection">
                     <h3 class="selection_title">Cортировка:</h3>
 
                     <ul class="selection-type-list">
@@ -166,81 +170,73 @@
                     </ul>
                 </header>
 
-                <ul class="catalog_list">
+                <ul class="product_list">
 
-                    <li class="catalog_item product">
+                    <li class="product">
                         <a class="product_link" href="catalog_item.html">
                             <h3 class="product_name">Любительская селфи-палка</h3>
                         </a>
 
                         <p class="product_price">500 руб.</p>
 
-                        <p class="product_img">
-                            <img src="img/selfie_stick_unprof.png" width="360" height="380" alt="Любительская селфи-палка">
-                        </p>
+                        <img class="product_img" src="img/selfie_stick_unprof.png" width="360" height="380" alt="Любительская селфи-палка">
 
-                        <p class="product_action">
+                        <div class="product_action">
                             <button class="button" type="button">В корзину</button>
                             <button class="button-grey" type="button">Добавить к сравнению</button>
-                        </p>
+                        </div>
                     </li>
 
-                    <li class="catalog_item product">
+                    <li class="product">
                         <a class="product_link" href="catalog_item.html">
                             <h3 class="product_name">Профессиональная селфи-палка</h3>
                         </a>
 
                         <p class="product_price">2 500 руб.</p>
 
-                        <p class="product_img">
-                            <img src="img/selfie_stick_prof.png" width="360" height="380" alt="Профессиональная селфи-палка">
-                        </p>
+                        <img class="product_img" src="img/selfie_stick_prof.png" width="360" height="380" alt="Профессиональная селфи-палка">
 
-                        <p class="product_action">
+                        <div class="product_action">
                             <button class="button" type="button">В корзину</button>
                             <button class="button-grey" type="button">Добавить к сравнению</button>
-                        </p>
+                        </div>
                     </li>
 
-                    <li class="catalog_item product">
+                    <li class="product">
                         <a class="product_link" href="catalog_item.html">
                             <h3 class="product_name">Непотопляемая селфи-палка</h3>
                         </a>
 
                         <p class="product_price">1 500 руб.</p>
 
-                        <p class="product_img">
-                            <img src="img/selfie_stick_unsink.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-                        </p>
+                        <img class="product_img" src="img/selfie_stick_unsink.png" width="360" height="380" alt="Непотопляемая селфи-палка">
 
-                        <p class="product_action">
+                        <div class="product_action">
                             <button class="button" type="button">В корзину</button>
                             <button class="button-grey" type="button">Добавить к сравнению</button>
-                        </p>
+                        </div>
                     </li>
 
-                    <li class="catalog_item product">
+                    <li class="product">
                         <a class="product_link" href="catalog_item.html">
                             <h3 class="product_name">Селфи-палка «Следуй за мной»</h3>
                         </a>
 
                         <p class="product_price">4 900 руб.</p>
 
-                        <p class="product_img">
-                            <img src="img/selfie_stick_follow_me.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                        </p>
+                        <img class="product_img" src="img/selfie_stick_follow_me.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 
                         <span class="product_new">new</span>
 
-                        <p class="product_action">
+                        <div class="product_action">
                             <button class="button" type="button">В корзину</button>
                             <button class="button-grey" type="button">Добавить к сравнению</button>
-                        </p>
+                        </div>
                     </li>
 
                 </ul>
 
-                <footer class="catalog_footer pagination">
+                <footer class="pagination">
                     <ul class="pagination_list">
                         <li><a class="pagination_item-back">Назад</a></li>
                         <li><a class="pagination_item pagination-item-current"><span class="visually-hidden">Текущая страница:</span>1</a></li>
@@ -254,7 +250,7 @@
         </div>
     </main>
 
-    <footer class="page_footer footer">
+    <footer class="footer">
 
         <div class="footer_top">
             <a class="footer_logo" href="index.html">
@@ -292,10 +288,8 @@
             </ul>
 
             <a class="footer_copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-
         </div>
 
     </footer>
-
 </body>
 </html>

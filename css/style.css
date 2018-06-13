@@ -566,7 +566,7 @@
     color: rgba(0,0,0,1);
 }
 
-.fieldset_property{
+.filter_property{
     font-size: 18px;
     line-height: 24px;
     color: rgba(0,0,0,1);
@@ -583,7 +583,7 @@
     color: rgba(0,0,0,1);
 }
 
-.catalog_header{
+.selection{
     background-color: #EBEBEB;
 }
 
@@ -620,7 +620,7 @@
     color: rgba(0,0,0,1);
 }
 
-.catalog_item{
+.product_list>li{
     list-style: none;
 }
 
