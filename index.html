@@ -10,87 +10,82 @@
 
     <header class="header">
         <div class="container">
-            <div class="container_header">
-                <nav class="page_menu">
+            <nav class="page_menu">
 
-                    <a class="header_logo">
-                        <img src="img/logo_black.png" width="163" height="36" alt="Интернет-магазин гаджетов «Девайс»">
-                    </a>
+                <a class="header_logo">
+                    <img src="img/logo_black.png" width="163" height="36" alt="Интернет-магазин гаджетов «Девайс»">
+                </a>
 
-                    <div class="header_middle">
-                        <form class="search">
+                <div class="header_middle">
+                    <form class="search">
 
-                            <label for="search" class="visually-hidden">Поиск по сайту</label>
-                            <input class="search_element" type="search" id="search" placeholder="Поиск по сайту">
-                            <button class="search_button" type="submit">Найти</button>
+                        <label for="search" class="visually-hidden">Поиск по сайту</label>
+                        <input class="search_element" type="search" id="search" placeholder="Поиск по сайту">
+                        <button class="search_button" type="submit">Найти</button>
 
-                        </form>
+                    </form>
 
-                        <div class="header_wrapper">
-                            <ul class="menu-user">
-                                <li><a class="menu-user_enter" href="#">Войти</a></li>
+                    <div class="header_wrapper">
+                        <ul class="menu-user">
+                            <li><a class="menu-user_enter" href="#">Войти</a></li>
+                        </ul>
+
+                        <ul class="menu-buying">
+                            <li class="menu-buying_item"><a class="menu-buying_compare" href="#">Сравнить</a></li>
+                            <li class="menu-buying_item"><a class="menu-buying_cart" href="#">Корзина</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header_bottom">
+
+                    <div class="menu_catalog">
+                        <a class="menu_link menu_link_catalog" href="catalog.html">Каталог товаров</a>
+                        <div class="menu-catalog_wrapper">
+
+                            <ul class="menu-catalog-list">
+                                <li class="menu-catalog_item">
+                                    <a class="menu-catalog_link" href="#">Виртуальная реальность</a>
+                                </li>
+
+                                <li class="menu-catalog-list">
+                                    <a class="menu-catalog_link" href="catalog.html">Моноподы для селфи</a>
+                                </li>
+
+                                <li class="menu-catalog_item">
+                                    <a class="menu-catalog_link" href="#">Экшн-камеры</a>
+                                </li>
                             </ul>
 
-                            <ul class="menu-buying">
-                                <li class="menu-buying_item"><a class="menu-buying_compare" href="#">Сравнить</a></li>
-                                <li class="menu-buying_item"><a class="menu-buying_cart" href="#">Корзина</a></li>
+                            <ul class="menu-catalog-list">
+                                <li class="menu-catalog_item">
+                                    <a class="menu-catalog_link" href="#">Фитнес-браслеты</a>
+                                </li>
+
+                                <li class="menu-catalog-list">
+                                    <a class="menu-catalog_link" href="#">Умные часы</a>
+                                </li>
                             </ul>
+
+                            <ul class="menu-catalog-list">
+                                <li class="menu-catalog_item">
+                                    <a class="menu-catalog_link" href="#">Квадрокоптеры</a>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
 
-                    <div class="header_bottom">
-
-                        <div class="menu_catalog">
-                            <a class="menu_link" href="#">Каталог товаров</a>
-                            <div class="menu-catalog_wrapper">
-
-                                <ul class="menu-catalog">
-                                    <li class="menu-catalog_item">
-                                        <a class="menu-catalog_link" href="#">Виртуальная реальность</a>
-                                    </li>
-
-                                    <li class="menu-catalog_item">
-                                        <a class="menu-catalog_link" href="catalog.html">Моноподы для селфи</a>
-                                    </li>
-
-                                    <li class="menu-catalog_item">
-                                        <a class="menu-catalog_link" href="#">Экшн-камеры</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="menu-catalog">
-                                    <li class="menu-catalog_item">
-                                        <a class="menu-catalog_link" href="#">Фитнес-браслеты</a>
-                                    </li>
-
-                                    <li class="menu-catalog_item">
-                                        <a class="menu-catalog_link" href="#">Умные часы</a>
-                                    </li>
-                                </ul>
-
-                                <ul class="menu-catalog">
-                                    <li class="menu-catalog_item">
-                                        <a class="menu-catalog_link" href="#">Квадрокоптеры</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <div class="header_wrapper">
-                            <ul class="menu-info">
-                                <li class="menu-info_item"><a class="menu_link" href="#">Доставка</a></li>
-                                <li class="menu-info_item"><a class="menu_link" href="#">Гарантия</a></li>
-                            </ul>
-
-                            <ul class="menu-contact">
-                                <li class="menu-contact_item"><a class="menu_link" href="#">Контакты</a></li>
-                            </ul>
-                        </div>
+                    <div class="header_wrapper">
+                        <ul class="menu-info">
+                            <li class="menu-info_item"><a class="menu_link" href="#">Доставка</a></li>
+                            <li class="menu-info_item"><a class="menu_link" href="#">Гарантия</a></li>
+                            <li class="menu-info_item"><a class="menu_link" href="#">Контакты</a></li>
+                        </ul>
                     </div>
+                </div>
 
-                </nav>
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -102,7 +97,7 @@
             <div class="container">
                  <ul class="gadget_list">
 
-                     <li class="gadget_slide gadget_slide-monopod gadget_slide-current">
+                     <li class="gadget_slide gadget_slide-monopod current_slide">
 
                          <div class="gadget_img">
                              <img  src="img/gadget_monopod.png" width="384" height="486" alt="Селфи-палка">
@@ -222,11 +217,11 @@
                     </li>
 
                     <li class="category_item">
-                        <a class="category_link" href="#">
-                            <div class="category_img category_img-fitbit"></div>
-                            <h3 class="category_title">Фитнес-браслеты</h3>
-                        </a>
-                    </li>
+                    <a class="category_link" href="#">
+                        <div class="category_img category_img-fitbit"></div>
+                        <h3 class="category_title">Фитнес-браслеты</h3>
+                    </a>
+                </li>
 
                     <li class="category_item">
                         <a class="category_link" href="#">
@@ -255,7 +250,7 @@
                 </div>
 
                 <ul class="info_list">
-                    <li class="info-slide info-slide-current">
+                    <li class="info-slide current_slide">
                         <div class="info_wrapper">
                             <h3 class="info_title">Доставка</h3>
                             <p class="info_text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -286,26 +281,26 @@
             <h2 class="visually-hidden">Популярные производители</h2>
             <div class="container">
                 <ul class="producer_list">
-                    <li>
-                        <a class="producer_item producer_dji" href="#">
+                    <li class="producer_item">
+                        <a class="producer_link producer_dji" href="#">
                             <img class="producer_logo" src="img/producer_dji_gr.png" width="260" height="100" alt="DJI">
                         </a>
                     </li>
 
-                    <li>
-                        <a class="producer_item producer_sp_gadgets" href="#">
+                    <li class="producer_item">
+                        <a class="producer_link producer_sp_gadgets" href="#">
                             <img class="producer_logo" src="img/producer_sp_gadgets_gr.png" width="260" height="100" alt="SP Gadgets">
                         </a>
                     </li>
 
-                    <li>
-                        <a class="producer_item producer_gopro" href="#">
+                    <li class="producer_item">
+                        <a class="producer_link producer_gopro" href="#">
                             <img class="producer_logo" src="img/producer_gopro_gr.png" width="260" height="100" alt="GoPro">
                         </a>
                     </li>
 
-                    <li>
-                        <a class="producer_item producer_vive" href="#">
+                    <li class="producer_item">
+                        <a class="producer_link producer_vive" href="#">
                             <img class="producer_logo" src="img/producer_vive__gr.png" width="260" height="100" alt="Vive">
                         </a>
                     </li>
@@ -341,7 +336,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer_top">
-                <a class="footer_logo">
+                <a class="footer_logo" href="index.html">
                     <img src="img/logo_yellow.png" width="163" height="36" alt="Интернет-магазин гаджетов «Девайс»">
                 </a>
 
@@ -361,21 +356,20 @@
             <div class="footer_middle">
                 <p class="address">г. Москва, ул. Строителей, 15</p>
 
-                <ul class="conditions">
-                    <li><a class="menu_link" href="#">Доставка</a></li>
-                    <li><a class="menu_link" href="#">Гарантия</a></li>
-                    <li><a class="menu_link" href="#">Контакты</a></li>
+                <ul class="footer_menu-info">
+                    <li class="menu_item"><a class="menu_link" href="#">Доставка</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Гарантия</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Контакты</a></li>
                 </ul>
 
                 <p class="phone">Тел.: +7 (495) 495-95-95</p>
             </div>
 
             <div class="footer_bottom">
-                <span></span>
                 <ul class="social_list">
-                    <li><a class="social_button" href="#">Facebook</a></li>
-                    <li><a class="social_button" href="#">Instagram</a></li>
-                    <li><a class="social_button" href="#">Twitter</a></li>
+                    <li class="social_item"><a class="social_button" href="#">Facebook</a></li>
+                    <li class="social_item"><a class="social_button" href="#">Instagram</a></li>
+                    <li class="social_item"><a class="social_button" href="#">Twitter</a></li>
                 </ul>
 
                 <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
