@@ -68,12 +68,9 @@
 }
 
 .container_header{
-    padding-top: 20px;
-}
-
-.container_header{
     width: 1040px;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .page_menu{
@@ -133,6 +130,7 @@
     background-repeat: no-repeat;
     background-position: 2px center;
     border: none;
+    border-bottom: 2px solid transparent;
 }
 
 .search_element::-webkit-input-placeholder{
@@ -232,7 +230,7 @@
 
 .menu-user_enter,
 .menu-user_profile{
-    padding: 9px 0 10px 0;
+    padding: 9px 0 10px;
 
     font-size: 15px;
     font-family: 'OpenSans', Arial, sans-serif;
@@ -267,7 +265,7 @@
 
 .menu-user_exit{
     margin-left: 20px;
-    padding: 9px 0 10px 0;
+    padding: 9px 0 10px;
 
     font-family: 'OpenSans', Arial, sans-serif;
     text-decoration: none;
@@ -301,7 +299,7 @@
 .menu-buying_compare,
 .menu-buying_cart{
     display: inline-block;
-    padding: 9px 0 10px 0;
+    padding: 9px 0 10px;
 
     font-family: 'OpenSans', Arial, sans-serif;
     text-decoration: none;
@@ -361,7 +359,7 @@
 .menu-catalog_wrapper{
     position: absolute;
 
-    display: none;  /* свойство силами js будет переключаться на display:block */
+    display: none;  /* СЃРІРѕР№СЃС‚РІРѕ СЃРёР»Р°РјРё js Р±СѓРґРµС‚ РїРµСЂРµРєР»СЋС‡Р°С‚СЊСЃСЏ РЅР° display:block */
     width:1040px;
     margin-top: 20px;
     padding-bottom: 33px;
@@ -369,13 +367,12 @@
     background-color: rgba(247,226,150,1);
 }
 
-.menu-catalog:first-child{
-    width: 240px;
+.menu-catalog{
+    width: 200px;
 }
 
-.menu-catalog:nth-child(2),
-.menu-catalog:nth-child(3){
-    width: 200px;
+.menu-catalog:first-child{
+    width: 240px;
 }
 
 .menu-catalog_link{
@@ -445,10 +442,10 @@
 .gadget_slide{
     display: none;
     justify-content: space-between;
-    height: 500px;  /* не выравнивала текст внутри слайда, поэтому высота слайда сейчас прыгает */
+    height: 500px;  /* РЅРµ РІС‹СЂР°РІРЅРёРІР°Р»Р° С‚РµРєСЃС‚ РІРЅСѓС‚СЂРё СЃР»Р°Р№РґР°, РїРѕСЌС‚РѕРјСѓ РІС‹СЃРѕС‚Р° СЃР»Р°Р№РґР° СЃРµР№С‡Р°СЃ РїСЂС‹РіР°РµС‚ */
 }
 
-.gadget_slide-current{ /* без понятия можно ли при нажатии на кнопку, с помощью js добавлять класс. Возможно, это решается как-то иначе */
+.gadget_slide-current{ /* Р±РµР· РїРѕРЅСЏС‚РёСЏ РјРѕР¶РЅРѕ Р»Рё РїСЂРё РЅР°Р¶Р°С‚РёРё РЅР° РєРЅРѕРїРєСѓ, СЃ РїРѕРјРѕС‰СЊСЋ js РґРѕР±Р°РІР»СЏС‚СЊ РєР»Р°СЃСЃ. Р’РѕР·РјРѕР¶РЅРѕ, СЌС‚Рѕ СЂРµС€Р°РµС‚СЃСЏ РєР°Рє-С‚Рѕ РёРЅР°С‡Рµ */
     display: flex;
 }
 
@@ -509,7 +506,7 @@
     justify-content: space-between;
 }
 
-.gadget_toggle{ /* сырой временный вариант */
+.gadget_toggle{ /* СЃС‹СЂРѕР№ РІСЂРµРјРµРЅРЅС‹Р№ РІР°СЂРёР°РЅС‚ */
     width: 10px;
     height: 10px;
 
@@ -648,7 +645,7 @@
 }
 
 .info_button{
-    padding: 9px 0 9px 0;
+    padding: 9px 0;
 
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 18px;
@@ -790,7 +787,7 @@
     margin-top: 93px;
     padding-bottom: 80px;
 
-    outline: 1px solid black; /* на этой линии будут декоративные элементы */
+    outline: 1px solid black; /* РЅР° СЌС‚РѕР№ Р»РёРЅРёРё Р±СѓРґСѓС‚ РґРµРєРѕСЂР°С‚РёРІРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ */
 }
 
 .shop>.container{
@@ -1138,8 +1135,8 @@
 }
 
 .filter_title{
-    padding: 23px 0 23px 0;
-    margin: 0;
+    padding: 23px 0;
+    margin-top: 0;
 
     font-size: 16px;
     font-weight: 800;
@@ -1158,7 +1155,6 @@
     color: rgba(0,0,0,1);
 
     border: none;
-    border-top: 2px solid black;
 }
 
 .filter_property{
@@ -1322,7 +1318,7 @@
 }
 
 .product_new{
-    display: none; /* пока этот элемент мешает, скрыла */
+    display: none; /* РїРѕРєР° СЌС‚РѕС‚ СЌР»РµРјРµРЅС‚ РјРµС€Р°РµС‚, СЃРєСЂС‹Р»Р° */
     padding: 15px 10px;
 
     font-size: 14px;
@@ -1336,7 +1332,7 @@
 }
 
 .product_action{
-    order: 3; /* навряд ли это свойство нужно, просто чтоб блок сейчас не мешал */
+    order: 3; /* РЅР°РІСЂСЏРґ Р»Рё СЌС‚Рѕ СЃРІРѕР№СЃС‚РІРѕ РЅСѓР¶РЅРѕ, РїСЂРѕСЃС‚Рѕ С‡С‚РѕР± Р±Р»РѕРє СЃРµР№С‡Р°СЃ РЅРµ РјРµС€Р°Р» */
 }
 
 .button-grey:hover,
