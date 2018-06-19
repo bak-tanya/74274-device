@@ -392,8 +392,8 @@
     margin-left: 39px;
 }
 
-.menu-info_item:nth-child(3){
-    margin-left: 115px;
+.menu-info_item:last-child{
+    margin-left: auto
 }
 
 .menu_link:hover,
@@ -519,27 +519,29 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
+    margin-top: -50px;
+    margin-bottom: 0;
+    margin-left: -40px;
 
     list-style: none;
 }
 
 .category_item{
     width: 160px;
-    padding-bottom: 5px;
+    margin-top: 50px;
 }
 
-.category_item:not(:nth-child(6n)){
-    margin-right: 40px;
+.category_item{
+    margin-left: 40px;
 }
 
 .category_link{
+    display: block;
     text-decoration: none;
 }
 
 .category_title{
-    margin-top: 28px;
-    margin-bottom: 0;
+    margin: 0;
 
     font-size: 18px;
     font-weight: 800;
@@ -548,56 +550,52 @@
     color: rgba(0,0,0,1);
 }
 
-.category_img{
+.category_title::before{
+    content: "";
+    display: block;
     width: 160px;
     height: 160px;
+    margin-bottom: 35px;
 
     background-color: rgba(240,197,46,0.5);
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
-.category_img-vr{
+.category_vr::before{
     background-image: url('../img/category-vr.png');
 }
 
-.category_img-monopod{
+.category_monopod::before{
     background-image: url('../img/category-monopod.png');
     background-position: 50% 100%;
 }
 
-.category_img-camera{
+.category_camera::before{
     background-image: url('../img/category-camera.png');
 }
 
-.category_img-fitbit{
+.category_fitbit::before{
     background-image: url('../img/category-fitbit.png');
 }
 
-.category_img-watch{
+.category_watch::before{
     background-image: url('../img/category-watch.png');
 }
 
-.category_img-quadcopter{
+.category_quadcopter::before{
     background-image: url('../img/category-quadcopter.png');
 }
 
-.category_link:hover .category_img,
-.category_link:focus .category_img{
+.category_link:hover .category_title::before,
+.category_link:focus .category_title::before{
     background-color: rgba(240,197,46,1);
 }
 
-.category_link:active .category_img::before{
-    content: "";
-    display: block;
-    width: 160px;
-    height: 160px;
-
-    background-color: rgba(240,197,46,0.7);
-}
+/* не сделала стили при .category_link:active (пока не знаю как это буду делать)  */
 
 .info{
-    margin-top: 75px;
+    margin-top: 80px;
     padding-bottom: 70px;
 
     background: linear-gradient(transparent 100px, rgba(229,229,229,1) 100px);
@@ -660,17 +658,18 @@
 
 .info-slide{
     display: none;
+    flex-direction: column;
     width: 760px;
-    padding-top: 70px;
+    margin-left: auto;
+    margin-top: 70px;
+
+    background-image: url('../img/info_delivery.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .current_slide{
     display: flex;
-}
-
-.info_wrapper{
-    width: 460px;
-    margin-right: auto;
 }
 
 .info_title{
@@ -684,6 +683,7 @@
 }
 
 .info_text{
+    width: 460px;
     margin-top: 35px;
     margin-bottom: 0;
 
@@ -724,7 +724,9 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 0;
+    margin-top: -40px;
+    margin-bottom: 0;
+    margin-left: -40px;
 
     list-style: none;
 }
@@ -733,8 +735,9 @@
     display: block;
 }
 
-.producer_item:not(:nth-child(4n)){
-    margin-right: 40px;
+.producer_item{
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 .producer_logo:hover{
@@ -928,6 +931,7 @@
     justify-content: center;
     padding: 0;
     margin: 0;
+    margin-left: -40px;
     width: 560px;
 
     list-style: none;
@@ -937,8 +941,8 @@
     color: rgba(255,255,255,1);
 }
 
-.footer .menu_item:not(:first-child){
-    margin-left: 38px;
+.footer .menu_item{
+    margin-left: 40px;
 }
 
 .footer_bottom{
@@ -1072,22 +1076,22 @@
 .breadcrumbs{
     display: flex;
     padding: 0;
-    margin: 25px 60px 0;
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: calc(60px - 40px);
 
     list-style: none;
 }
 
 .breadcumbs_item{
+    margin-left: 40px;
+
     font-family: 'OpenSans', Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-decoration: none;
     letter-spacing: 0.01em;
     color: rgba(0,0,0,0.3);
-}
-
-.breadcumbs_item:not(last-child){
-    margin-right: 40px;
 }
 
 .breadcumbs_item:hover,
@@ -1117,7 +1121,6 @@
 .filter_header{
     background-color: #DCDCDC;
 }
-
 
 .filter_title{
     padding-top: 23px;
@@ -1242,9 +1245,9 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-top: 70px;
+    margin-top: calc(70px - 35px);
     margin-bottom: 0;
-    margin-left: 70px;
+    margin-left: calc(70px - 40px);
 
     list-style: none;
 }
@@ -1253,11 +1256,8 @@
     display: flex;
     flex-direction: column;
     width: 360px;
-    padding-bottom: 40px;
-}
-
-.product:not(:nth-child(2n+1)){
     margin-left: 40px;
+    margin-top: 40px;
 }
 
 .product_img{
@@ -1315,6 +1315,8 @@
 }
 
 .product_action{
+    display: flex;
+    flex-direction: column;
     order: 3; /* навряд ли это свойство нужно, просто чтоб блок сейчас не мешал */
 }
 
@@ -1327,13 +1329,16 @@
     color: rgba(0,0,0,0.2);
 }
 
+.pagination{
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
 .pagination_list{
     display: flex;
     justify-content: center;
     padding: 23px 0;
-    margin-top: 0;
     margin-bottom: 0;
-    margin-left: 70px;
 
     list-style: none;
 
