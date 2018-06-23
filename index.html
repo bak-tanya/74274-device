@@ -27,12 +27,12 @@
 
                     <div class="header_wrapper">
                         <ul class="menu-user">
-                            <li><a class="menu-user_enter" href="#">Войти</a></li>
+                            <li class="menu-user_item"><a class="menu-user_link enter" href="#">Войти</a></li>
                         </ul>
 
                         <ul class="menu-buying">
-                            <li class="menu-buying_item"><a class="menu-buying_compare" href="#">Сравнить</a></li>
-                            <li class="menu-buying_item"><a class="menu-buying_cart" href="#">Корзина</a></li>
+                            <li class="menu-buying_item"><a class="menu-buying_link compare" href="#">Сравнить</a></li>
+                            <li class="menu-buying_item"><a class="menu-buying_link cart" href="#">Корзина</a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                                     <a class="menu-catalog_link" href="#">Фитнес-браслеты</a>
                                 </li>
 
-                                <li class="menu-catalog-list">
+                                <li class="menu-catalog_item">
                                     <a class="menu-catalog_link" href="#">Умные часы</a>
                                 </li>
                             </ul>
@@ -104,18 +104,9 @@
                          </div>
 
                          <div class="gadget_description">
-                             <p class="gadget_lead">Делай селфи, как Бен Стиллер!</p>
+                             <p class="gadget_lead">Делай селфи,<br>как Бен Стиллер!</p>
                              <p class="gadget_text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-
-                             <div class="button_wrapper">
-                                 <a class="button" href="#">Подробнее</a>
-
-                                 <div class="gadget_control">
-                                     <button class="gadget_toggle gadget_toggle-current" type="button"><span class="visually-hidden">Текущий слайд:</span>Слайд с моноподом</button>
-                                     <button class="gadget_toggle" type="button">Слайд с фитнес-браслетами</button>
-                                     <button class="gadget_toggle" type="button">Слайд с квадрокоптером</button>
-                                 </div>
-                             </div>
+                             <a class="button gadget_button" href="#">Подробнее</a>
 
                              <table>
                                  <tr>
@@ -140,14 +131,10 @@
                          </div>
 
                          <div class="gadget_description">
-                             <p class="gadget_lead">Худеем правильно!</p>
+                             <p class="gadget_lead">Худеем<br>правильно!</p>
                              <p class="gadget_text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                             <a class="button gadget_button" href="#">Подробнее</a>
 
-                             <div class="gadget_control">
-                                 <button class="gadget_toggle" type="button">Слайд с моноподом</button>
-                                 <button class="gadget_toggle gadget_toggle-current" type="button"><span class="visually-hidden">Текущий слайд:</span>Слайд с фитнес-браслетами</button>
-                                 <button class="gadget_toggle" type="button">Слайд с квадрокоптером</button>
-                             </div>
                              <table>
                                  <tr>
                                      <td class="gadget_data">48 часов</td>
@@ -166,14 +153,10 @@
                          </div>
 
                          <div class="gadget_description">
-                             <p class="gadget_lead">Порхает как бабочка, жалит как пчела!</p>
+                             <p class="gadget_lead">Порхает как бабочка,<br>жалит как пчела!</p>
                              <p class="gadget_text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                             <a class="button gadget_button" href="#">Подробнее</a>
 
-                             <div class="gadget_control">
-                                 <button class="gadget_toggle" type="button">Слайд с моноподом</button>
-                                 <button class="gadget_toggle" type="button">Слайд с фитнес-браслетами</button>
-                                 <button class="gadget_toggle gadget_toggle-current" type="button"><span class="visually-hidden">Текущий слайд:</span>Слайд с квадрокоптером</button>
-                             </div>
                              <table>
                                  <tr>
                                      <td class="gadget_data">800 м</td>
@@ -188,6 +171,12 @@
                      </li>
 
                  </ul>
+
+                <div class="gadget_control">
+                    <button class="gadget_toggle toggle-current" type="button"><span class="visually-hidden">Текущий слайд:</span>Слайд с моноподом</button>
+                    <button class="gadget_toggle" type="button">Слайд с фитнес-браслетами</button>
+                    <button class="gadget_toggle" type="button">Слайд с квадрокоптером</button>
+                </div>
             </div>
         </article>
 
@@ -195,6 +184,7 @@
             <div class="container">
                 <h2 class="visually-hidden">Популярные категории</h2>
                 <ul class="category_list">
+
                     <li class="category_item">
                         <a class="category_link" href="#">
                             <h3 class="category_title category_vr">Виртуальная реальность</h3>
@@ -230,6 +220,7 @@
                             <h3 class="category_title category_quadcopter">Квадрокоптеры</h3>
                         </a>
                     </li>
+
                 </ul>
             </div>
         </article>
@@ -244,20 +235,22 @@
                 </div>
 
                 <ul class="info_list">
-                    <li class="info-slide current_slide">
+
+                    <li class="info-slide delivery">
                         <h3 class="info_title">Доставка</h3>
                         <p class="info_text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                     </li>
 
-                    <li class="info-slide">
+                    <li class="info-slide warranty">
                         <h3 class="info_title">Гарантия</h3>
                         <p class="info_text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
                     </li>
 
-                    <li class="info-slide">
+                    <li class="info-slide credit current_slide">
                         <h3 class="info_title">Кредит</h3>
                         <p class="info_text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                     </li>
+
                 </ul>
             </div>
         </section>
@@ -266,6 +259,7 @@
             <h2 class="visually-hidden">Популярные производители</h2>
             <div class="container">
                 <ul class="producer_list">
+
                     <li class="producer_item">
                         <a class="producer_link producer_dji" href="#">
                             <img class="producer_logo" src="img/producer_dji_gr.png" width="260" height="100" alt="DJI">
@@ -289,12 +283,14 @@
                             <img class="producer_logo" src="img/producer_vive__gr.png" width="260" height="100" alt="Vive">
                         </a>
                     </li>
+
                 </ul>
             </div>
         </article>
 
         <div class="shop">
             <div class="container">
+
                 <section class="shop-about">
                     <h2 class="shop_title">О нас</h2>
                     <p class="shop_text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -304,15 +300,16 @@
                         <li>Автотрейдинг</li>
                         <li>ЖелДорЭкспедиция</li>
                     </ul>
-                    <a class="button" href="#">Подробнее о нас</a>
+                    <a class="button shop_button" href="#">Подробнее о нас</a>
                 </section>
 
                 <section class="shop-contacts">
                     <h2 class="shop_title">Контакты</h2>
                     <p class="shop_text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                     <img class="shop_img" src="img/map.png" width="560" height="222" alt="Адрес компании: г. Москва, ул. Строителей, 15">
-                    <a class="button" href="#">Напишите нам</a>
+                    <a class="button shop_button" href="#">Напишите нам</a>
                 </section>
+
             </div>
         </div>
 
@@ -327,12 +324,12 @@
 
                 <div class="footer_top-wrapper">
                     <ul class="menu-user">
-                        <li><a class="menu-user_enter" href="#">Войти</a></li>
+                        <li class="menu-user_item"><a class="menu-user_link enter" href="#">Войти</a></li>
                     </ul>
 
                     <ul class="menu-buying">
-                        <li><a class="menu-buying_compare" href="#">Сравнить</a></li>
-                        <li><a class="menu-buying_cart" href="#">Корзина</a></li>
+                        <li class="menu-buying_item"><a class="menu-buying_link compare" href="#">Сравнить</a></li>
+                        <li class="menu-buying_item"><a class="menu-buying_link cart" href="#">Корзина</a></li>
                     </ul>
                 </div>
 
@@ -351,13 +348,21 @@
             </div>
 
             <div class="footer_bottom">
+                <span class="line"></span>
+
                 <ul class="social_list">
-                    <li class="social_item"><a class="social_button" href="#">Facebook</a></li>
-                    <li class="social_item"><a class="social_button" href="#">Instagram</a></li>
-                    <li class="social_item"><a class="social_button" href="#">Twitter</a></li>
+                    <li class="social_item">
+                        <a class="social_link social_facebook" href="#"><span class="visually-hidden">Facebook</span></a>
+                    </li>
+                    <li class="social_item">
+                        <a class="social_link social_instagram" href="#"><span class="visually-hidden">Instagram</span></a>
+                    </li>
+                    <li class="social_item">
+                        <a class="social_link social_twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+                    </li>
                 </ul>
 
-                <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+                <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
 
             </div>
         </div>
@@ -396,11 +401,9 @@
     </div>
 
     <div class="popup map">
-
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img class="popup_map" src="img/map_big.png" width="960" height="559" alt="Адрес компании: г. Москва, ул. Строителей, 15">
         <button class="popup_close" type="button">Закрыть</button>
-
     </div>
 
 </body>
