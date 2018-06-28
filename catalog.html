@@ -43,31 +43,31 @@
                     <div class="menu-catalog_wrapper">
                         <ul class="menu-catalog-list">
                             <li class="menu-catalog_item">
-                                <a class="menu-catalog_link" href="#">Виртуальная реальность</a>
+                                <a class="menu-catalog_link" href="catalog.html?category=vr">Виртуальная реальность</a>
                             </li>
 
                             <li class="menu-catalog-list">
-                                <a class="menu-catalog_link" href="catalog.html">Моноподы для селфи</a>
+                                <a class="menu-catalog_link" href="catalog.html?category=monopod">Моноподы для селфи</a>
                             </li>
 
                             <li class="menu-catalog_item">
-                                <a class="menu-catalog_link" href="#">Экшн-камеры</a>
-                            </li>
-                        </ul>
-
-                        <ul class="menu-catalog-list">
-                            <li class="menu-catalog_item">
-                                <a class="menu-catalog_link" href="#">Фитнес-браслеты</a>
-                            </li>
-
-                            <li class="menu-catalog_item">
-                                <a class="menu-catalog_link" href="#">Умные часы</a>
+                                <a class="menu-catalog_link" href="catalog.html?category=camera">Экшн-камеры</a>
                             </li>
                         </ul>
 
                         <ul class="menu-catalog-list">
                             <li class="menu-catalog_item">
-                                <a class="menu-catalog_link" href="#">Квадрокоптеры</a>
+                                <a class="menu-catalog_link" href="catalog.html?category=fitbit">Фитнес-браслеты</a>
+                            </li>
+
+                            <li class="menu-catalog_item">
+                                <a class="menu-catalog_link" href="catalog.html?category=watch">Умные часы</a>
+                            </li>
+                        </ul>
+
+                        <ul class="menu-catalog-list">
+                            <li class="menu-catalog_item">
+                                <a class="menu-catalog_link" href="catalog.html?category=quadcopter">Квадрокоптеры</a>
                             </li>
                         </ul>
                     </div>
@@ -91,7 +91,7 @@
             <h1 class="page_title">Моноподы для селфи</h1>
             <ul class="breadcrumbs">
                 <li class="breadcumbs_item"><a class="breadcumbs_link" href="index.html">Главная</a></li>
-                <li class="breadcumbs_item"><a class="breadcumbs_link" href="#">Каталог товаров</a></li>
+                <li class="breadcumbs_item"><a class="breadcumbs_link" href="catalog.html">Каталог товаров</a></li>
                 <li class="breadcumbs_item"><a class="breadcumbs_link">Моноподы для селфи</a></li>
             </ul>
         </div>
@@ -101,62 +101,57 @@
 
                 <aside class="filter_wrapper">
                     <header class="filter_header">
-                        <h1 class="filter_title">Фильтр:</h1>
+                        <h2 class="filter_title">Фильтр:</h2>
                     </header>
 
                     <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                         <fieldset class="filter_fieldset">
                             <legend class="filter_property">Стоимость</legend>
 
-                            <label for="price_start">Минимальная цена</label>
-                            <input type="number" name="price_start" id="price_start">
+                            <div class="filter-range">
+                                <div class="range-controls" tabindex="0">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                        <div class="range-toggle range-toggle-min"></div>
+                                        <div class="range-toggle range-toggle-max"></div>
+                                    </div>
+                                </div>
 
-                            <label for="price_end">Максимальная цена</label>
-                            <input type="number" name="price_end" id="price_end">
+                                <div class="price_controls">
+                                    <label class="min-price">от<input type="text" name="min-price" value="0" disabled></label>
+
+                                    <label class="max-price">до<input type="text" name="max-price" value="5000" disabled></label>
+                                </div>
+                            </div>
                         </fieldset>
 
                         <fieldset class="filter_fieldset">
                             <legend class="filter_property">Цвет</legend>
 
                             <ul class="filter_list">
-                                <li>
-                                    <label class="filter_item">
-                                        <input class="visually-hidden" type="checkbox" name="color__black" checked>
-                                        <span class="checkbox-indicator"></span>
-                                        Черный
-                                    </label>
+                                <li class="filter_item">
+                                    <input class="visually-hidden" type="checkbox" name="color_black" id="color_black" checked>
+                                    <label class="checkbox_label" for="color_black">Черный</label>
                                 </li>
 
-                                <li>
-                                    <label class="filter_item">
-                                        <input class="visually-hidden" type="checkbox" name="color__white">
-                                        <span class="checkbox-indicator"></span>
-                                        Белый
-                                    </label>
+                                <li class="filter_item">
+                                    <input class="visually-hidden" type="checkbox" name="color_white" id="color_white">
+                                    <label class="checkbox_label" for="color_white">Белый</label>
                                 </li>
 
-                                <li>
-                                    <label class="filter_item">
-                                        <input class="visually-hidden" type="checkbox" name="color__blue" checked>
-                                        <span class="checkbox-indicator"></span>
-                                        Синий
-                                    </label>
+                                <li class="filter_item">
+                                    <input class="visually-hidden" type="checkbox" name="color_blue" id="color_blue" checked>
+                                    <label class="checkbox_label" for="color_blue">Синий</label>
                                 </li>
 
-                                <li>
-                                    <label class="filter_item">
-                                        <input class="visually-hidden" type="checkbox" name="color__red" checked>
-                                        <span class="checkbox-indicator"></span>
-                                        Красный
-                                    </label>
+                                <li class="filter_item">
+                                    <input class="visually-hidden" type="checkbox" name="color_red" id="color_red" checked>
+                                    <label class="checkbox_label" for="color_red">Красный</label>
                                 </li>
 
-                                <li>
-                                    <label class="filter_item">
-                                        <input class="visually-hidden" type="checkbox" name="color__pink">
-                                        <span class="checkbox-indicator"></span>
-                                        Розовый
-                                    </label>
+                                <li class="filter_item">
+                                    <input class="visually-hidden" type="checkbox" name="color_pink" id="color_pink">
+                                    <label class="checkbox_label" for="color_pink">Розовый</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -165,20 +160,14 @@
                             <legend class="filter_property">Bluetooth</legend>
 
                             <ul class="filter_list">
-                                <li>
-                                    <label class="filter_item">
-                                        <input class="visually-hidden" type="radio" name="filter__bluetooth" value="yes" checked>
-                                        <span class="radiobutton-indicator"></span>
-                                        Есть
-                                    </label>
+                                <li class="filter_item">
+                                    <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth_yes" value="yes" checked>
+                                    <label class="radiobutton_label" for="bluetooth_yes">Есть</label>
                                 </li>
 
-                                <li>
-                                    <label class="filter_item">
-                                        <input class="visually-hidden" type="radio" name="filter__bluetooth" value="no">
-                                        <span class="radiobutton-indicator"></span>
-                                        Нет
-                                    </label>
+                                <li class="filter_item">
+                                    <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth_no" value="no">
+                                    <label class="radiobutton_label" for="bluetooth_no">Нет</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -230,7 +219,7 @@
                         <li class="product">
                             <div class="product_description">
                                 <a class="product_link" href="catalog_item.html">
-                                    <h3 class="product_name">Профессиональная селфи-палка</h3>
+                                    <h3 class="product_name">Профессиональная<br>селфи-палка</h3>
                                 </a>
 
                                 <p class="product_price">2 500 руб.</p>
@@ -264,7 +253,7 @@
                             </div>
                         </li>
 
-                        <li class="product">
+                        <li class="product new">
                             <div class="product_description">
                                 <a class="product_link" href="catalog_item.html">
                                     <h3 class="product_name">Селфи-палка «Следуй за мной»</h3>
@@ -275,8 +264,6 @@
 
                             <div class="product_card">
                                 <img class="product_img" src="img/selfie_stick_follow_me.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-
-                                <span class="product_new">new</span>
 
                                 <div class="product_action">
                                     <button class="button" type="button">В корзину</button>
@@ -310,17 +297,21 @@
                     <img src="img/logo_yellow.png" width="163" height="36" alt="Интернет-магазин гаджетов «Девайс»">
                 </a>
 
-                <div class="footer_top-wrapper">
-                    <ul class="menu-user">
-                        <li class="menu-user_item"><a class="menu-user_link profile" href="#">Валентин Петухов</a></li>
-                        <li class="menu-user_item"><a class="menu-user_link exit" href="#">Выйти</a></li>
-                    </ul>
+                <ul class="footer-menu_list">
+                    <li class="footer-menu_item">
+                        <ul class="menu-user">
+                            <li class="menu-user_item"><a class="menu-user_link profile" href="#">Валентин Петухов</a></li>
+                            <li class="menu-user_item"><a class="menu-user_link exit" href="#">Выйти</a></li>
+                        </ul>
+                    </li>
 
-                    <ul class="menu-buying">
-                        <li class="menu-buying_item"><a class="menu-buying_link compare" href="#">Сравнить</a></li>
-                        <li class="menu-buying_item"><a class="menu-buying_link cart" href="#">Корзина</a></li>
-                    </ul>
-                </div>
+                    <li class="footer-menu_item">
+                        <ul class="menu-buying">
+                            <li class="menu-buying_item"><a class="menu-buying_link compare" href="#">Сравнить</a></li>
+                            <li class="menu-buying_item"><a class="menu-buying_link cart" href="#">Корзина</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
 
             <div class="footer_middle">
