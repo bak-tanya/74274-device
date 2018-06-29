@@ -54,6 +54,7 @@
     font-weight: 300;
     line-height: 30px;
 
+    min-width: 1200px;
     margin: 0;
     padding: 0;
 
@@ -192,6 +193,7 @@ img{
     margin: 0;
     padding: 0 20px;
 
+    cursor: pointer;
     text-align: center;
     letter-spacing: 0.01em;
 
@@ -451,6 +453,10 @@ img{
     opacity: 0.3;
 }
 
+.menu-catalog_link:not([href]){
+    opacity: 1;
+}
+
 .menu_info{
     width: 500px;
 }
@@ -678,6 +684,8 @@ img{
     height: 13px;
     margin-left: 20px;
 
+    cursor: pointer;
+
     border: none;
     background-color: transparent;
     background-image: url('../img/slider-button-empty.svg');
@@ -700,8 +708,9 @@ img{
 
     display: inline-block;
 
-    padding: 10px 40px;
+    padding: 12px 40px;
 
+    cursor: pointer;
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
@@ -925,6 +934,7 @@ img{
     width: 165px;
     padding: 9px 0;
 
+    cursor: pointer;
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
@@ -1223,7 +1233,7 @@ img{
     margin-top: 42px;
 }
 
-.footer{
+.footer {
     padding-top: 65px;
     padding-bottom: 65px;
 
@@ -1444,8 +1454,8 @@ img{
 .social_link{
     display: block;
 
-    width: 32px;
-    height: 32px;
+    width: 33px;
+    height: 33px;
 
     opacity: 0.3;
     background-repeat: no-repeat;
@@ -1701,6 +1711,8 @@ img{
 }
 
 .catalog_wrapper{
+    overflow: hidden;
+
     margin-top: 43px;
 }
 
@@ -1949,10 +1961,9 @@ legend::before{
 
     position: relative;
 
-    display: block;
-
     padding-left: 38px;
 
+    cursor: pointer;
     letter-spacing: 0.01em;
 
     color: rgba(0,0,0,1);
@@ -1996,8 +2007,8 @@ input[type='checkbox']:checked+.checkbox_label::before{
 
     display: block;
 
-    width: 26px;
-    height: 26px;
+    width: 27px;
+    height: 27px;
 
     content: '';
     transform: translateY(-50%);
@@ -2219,6 +2230,7 @@ input[type='radio']:disabled+.radiobutton_label{
 
     margin-top: 3px;
 
+    cursor: pointer;
     letter-spacing: 0.01em;
 
     opacity: 0.5;
@@ -2405,4 +2417,10 @@ input[type='radio']:disabled+.radiobutton_label{
 .pagination_button:active{
     color: rgba(0,0,0,0.3);
     background-color: rgba(0,0,0,0.08);
+}
+
+.pagination_button:not([href]):hover,
+.pagination_button:not([href]):active{
+    background-color: inherit;
+    color: rgba(0,0,0,1);
 }
