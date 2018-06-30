@@ -117,6 +117,7 @@ img{
     margin-top: 20px;
 
     justify-content: space-between;
+
 }
 
 .search{
@@ -127,6 +128,8 @@ img{
     width: 440px;
     margin: 0;
     padding: 0;
+
+    align-self: flex-start;
 }
 
 .search_element{
@@ -229,6 +232,9 @@ img{
     padding-left: 0;
 
     list-style: none;
+
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .menu-user_item{
@@ -310,6 +316,9 @@ img{
     padding-left: 0;
 
     list-style: none;
+
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .menu-buying_item{
@@ -590,6 +599,8 @@ img{
 
 .gadget_img{
     display: flex;
+
+    align-self: center;
 }
 
 .gadget_lead{
@@ -779,6 +790,7 @@ img{
     width: 260px;
     padding-right: 0;
     padding-left: 0;
+    margin-top: 50px;
 }
 
 .category{
@@ -1220,11 +1232,6 @@ img{
     border-radius: 50%;
 }
 
-.shop .button{
-    width: 265px;
-    margin-top: 55px;
-}
-
 .shop-contacts{
     width: 560px;
 }
@@ -1393,6 +1400,7 @@ img{
 
     list-style: none;
 
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -1435,18 +1443,22 @@ img{
 .social_list{
     display: flex;
 
-    margin-top: 0;
+    width: 240px;
+
+    margin-top: -20px;
     margin-bottom: 0;
     margin-left: -22px;
     padding-left: 0;
 
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social_item{
     display: block;
 
     margin-left: 22px;
+    margin-top: 20px;
 }
 
 
@@ -1675,6 +1687,8 @@ img{
     padding-left: 0;
 
     list-style: none;
+
+    flex-wrap: wrap;
 }
 
 .breadcumbs_item:not(:last-child){
@@ -1994,6 +2008,9 @@ legend::before{
 
 input[type='checkbox']:focus+.checkbox_label::before{
     opacity: 0.6;
+
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 input[type='checkbox']:checked+.checkbox_label::before{
@@ -2016,6 +2033,11 @@ input[type='checkbox']:checked+.checkbox_label::before{
     background-image: url('../img/filter_radio-off.svg');
     background-repeat: no-repeat;
     background-position: left center;
+}
+
+input[type='radio']:focus+.radiobutton_label::before{
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 input[type='radio']:checked+.radiobutton_label::before{
@@ -2087,9 +2109,13 @@ input[type='radio']:disabled+.radiobutton_label{
     padding-left: 0;
 
     list-style: none;
+
+    flex-wrap: wrap;
 }
 
 .selection-type-list{
+    width: 500px;
+
     margin-left: calc(55px - 30px);
 }
 
@@ -2125,10 +2151,11 @@ input[type='radio']:disabled+.radiobutton_label{
 }
 
 .selection-direction-list{
+    width: 60px;
     margin-left: auto;
 }
 
-.selection-direction_item:not(:first-child){
+.selection-direction_item{
     margin-left: 20px;
 }
 
@@ -2221,6 +2248,8 @@ input[type='radio']:disabled+.radiobutton_label{
 
 .product_action .button{
     margin-top: 40px;
+    padding-left: 37px;
+    padding-right: 37px;
 }
 
 .button-grey{
