@@ -563,7 +563,7 @@ img{
     display: flex;
 }
 
-.gadget_slide:before{
+.gadget_slide::before{
     font-family: 'Gilroy', Arial, sans-serif;
     font-size: 179px;
     font-weight: 800;
@@ -574,7 +574,7 @@ img{
     right: 0;
 
     margin: 0;
-    margin-right: 0.25em;
+    margin-right: 50px;
     padding: 0;
 
     content: counter(li, decimal-leading-zero);
@@ -586,13 +586,13 @@ img{
 
 .gadget_description{
     display: flex;
-    flex-direction: column;
 
     box-sizing: border-box;
-    width: 501px;
+    width: 560px;
     margin-left: 40px;
     padding-bottom: 22px;
 
+    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -685,7 +685,7 @@ img{
     margin-bottom: 0;
     padding-left: 0;
 
-    transform: translate(-80px, -180px);
+    transform: translate(-80px, -175px);
 
     align-self: flex-end;
 }

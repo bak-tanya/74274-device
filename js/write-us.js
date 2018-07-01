@@ -15,7 +15,7 @@ try{
     storage_name = localStorage.getItem("user_name");
     storage_email = localStorage.getItem("user_email");
 }
-catch (err){
+catch(err){
     isStorageSupport = false;
 }
 
