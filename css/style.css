@@ -549,9 +549,12 @@ img{
 }
 
 .gadget_list{
+    font-size: 0;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+
+    display: flex;
 
     list-style-type: none;
 
@@ -2027,10 +2030,12 @@ legend::before{
 }
 
 input[type='checkbox']:focus+.checkbox_label::before{
-    opacity: 0.6;
-
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
+}
+
+input[type='checkbox']:active+.checkbox_label{
+    opacity: 1;
 }
 
 input[type='checkbox']:checked+.checkbox_label::before{
@@ -2060,7 +2065,12 @@ input[type='radio']:focus+.radiobutton_label::before{
     outline: 5px auto -webkit-focus-ring-color;
 }
 
+input[type='radio']:active+.radiobutton_label{
+    opacity: 1;
+}
+
 input[type='radio']:checked+.radiobutton_label::before{
+    opacity: 1;
     background-image: url('../img/filter_radio-on.svg');
 }
 
