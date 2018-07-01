@@ -95,7 +95,7 @@
             <div class="container">
                 <ol class="gadget_list">
 
-                    <li class="gadget_slide gadget_slide-monopod current_slide">
+                    <li class="gadget_slide current_gadget-slide" data-gadget="monopod" value="9">
                         <div class="gadget_img">
                             <img src="img/gadget_monopod.png" width="560" height="507" alt="Селфи-палка">
                         </div>
@@ -121,7 +121,7 @@
                         </div>
                     </li>
 
-                    <li class="gadget_slide gadget_slide-fitbit">
+                    <li class="gadget_slide visually-hidden" data-gadget="fitbit">
                         <div class="gadget_img">
                             <img src="img/gadget_fitbit.png" width="560" height="507" alt="Фитнес-браслеты">
                         </div>
@@ -143,13 +143,13 @@
                         </div>
                     </li>
 
-                    <li class="gadget_slide gadget_slide-quadcopter">
+                    <li class="gadget_slide visually-hidden" data-gadget="quadcopter">
                         <div class="gadget_img">
                             <img src="img/gadget_quadcopter.png" width="560" height="507" alt="Квадрокоптер">
                         </div>
 
                         <div class="gadget_description">
-                            <p class="gadget_lead">Порхает как бабочка, жалит как пчела!</p>
+                            <p class="gadget_lead">Порхает как бабочка,<br>жалит как пчела!</p>
                             <p class="gadget_text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                             <a class="button gadget_button" href="#">Подробнее</a>
 
@@ -168,11 +168,19 @@
                     </li>
                 </ol>
 
-                <div class="gadget_control">
-                    <button class="gadget_toggle toggle-current" type="button"><span class="visually-hidden">Текущий слайд:</span>Слайд с моноподом</button>
-                    <button class="gadget_toggle" type="button">Слайд с фитнес-браслетами</button>
-                    <button class="gadget_toggle" type="button">Слайд с квадрокоптером</button>
-                </div>
+                <ul class="gadget-control">
+                    <li class="gadget-control_item">
+                        <button class="gadget_toggle current-toggle" type="button" data-gadget="monopod"><span class="visually-hidden">Текущий слайд:</span>Слайд с моноподом</button>
+                    </li>
+
+                    <li class="gadget-control_item">
+                        <button class="gadget_toggle" type="button" data-gadget="fitbit">Слайд с фитнес-браслетами</button>
+                    </li>
+
+                    <li class="gadget-control_item">
+                        <button class="gadget_toggle" type="button" data-gadget="quadcopter">Слайд с квадрокоптером</button>
+                    </li>
+                </ul>
             </div>
         </article>
 
@@ -225,23 +233,23 @@
 
             <div class="container">
                 <div class="info_control">
-                    <button class="info_button info_button-current" type="button"><span class="visually-hidden">Текущий слайд:</span>Доставка</button>
-                    <button class="info_button" type="button">Гарантия</button>
-                    <button class="info_button" type="button">Кредит</button>
+                    <button class="info_button info_button-current" type="button" data-info="delivery"><span class="visually-hidden">Текущий слайд:</span>Доставка</button>
+                    <button class="info_button" type="button" data-info="warranty">Гарантия</button>
+                    <button class="info_button" type="button" data-info="credit">Кредит</button>
                 </div>
 
                 <ul class="info_list">
-                    <li class="info-slide delivery">
+                    <li class="info-tab delivery" data-info="delivery">
                         <h3 class="info_title">Доставка</h3>
                         <p class="info_text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                     </li>
 
-                    <li class="info-slide warranty">
+                    <li class="info-tab warranty visually-hidden" data-info="warranty">
                         <h3 class="info_title">Гарантия</h3>
                         <p class="info_text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
                     </li>
 
-                    <li class="info-slide credit current_slide">
+                    <li class="info-tab credit visually-hidden" data-info="credit">
                         <h3 class="info_title">Кредит</h3>
                         <p class="info_text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                     </li>
@@ -303,9 +311,9 @@
 
                     <p class="shop_text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-                    <img class="shop_img" src="img/map.png" width="560" height="222" alt="Адрес компании: г. Москва, ул. Строителей, 15">
+                    <a class="map_img" href="map.html"><img class="shop_img" src="img/map.png" width="560" height="222" alt="Адрес компании: г. Москва, ул. Строителей, 15"></a>
 
-                    <a class="button shop_button" href="#">Напишите нам</a>
+                    <a class="button shop_button" href="write-us.html">Напишите нам</a>
                 </section>
 
             </div>
@@ -400,15 +408,18 @@
         <button class="popup_close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
 
-
-
     <div class="popup map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
 
-        <img class="popup_map" src="img/map_big.png" width="960" height="559" alt="Адрес компании: г. Москва, ул. Строителей, 15">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.6356239186252!2d37.524574291489536!3d55.6860564808056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1530377453388" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         <button class="popup_close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
+
+    <script src="js/write-us.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/tabs.js"></script>
 
 </body>
 </html>

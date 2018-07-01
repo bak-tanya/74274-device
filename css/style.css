@@ -415,14 +415,14 @@ img{
 
 .menu-catalog_wrapper{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     left: -60px;
 
     display: none;
 
     width: 1100px;
     padding-top: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 37px;
     padding-left: 60px;
 
     background-color: rgba(247,226,150,1);
@@ -560,8 +560,7 @@ img{
 
 .gadget_slide{
     position: relative;
-
-    display: none;
+    display: flex;
 }
 
 .gadget_slide:before{
@@ -575,14 +574,14 @@ img{
     right: 0;
 
     margin: 0;
-    margin-right: 0.25em;  /* ????? */
+    margin-right: 0.25em;
     padding: 0;
 
     content: counter(li, decimal-leading-zero);
     counter-increment: li;
     letter-spacing: 0.01em;
 
-    color: #fff;
+    color: #ffffff;
 }
 
 .gadget_description{
@@ -590,7 +589,7 @@ img{
     flex-direction: column;
 
     box-sizing: border-box;
-    width: 500px;
+    width: 501px;
     margin-left: 40px;
     padding-bottom: 22px;
 
@@ -610,6 +609,7 @@ img{
 
     margin-top: 0;
     margin-bottom: 0;
+    z-index: 1;
 
     letter-spacing: 0.01em;
 
@@ -678,12 +678,22 @@ img{
     letter-spacing: 0.01em;
 }
 
-.gadget_control{
+.gadget-control{
     display: flex;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 
     transform: translate(-80px, -180px);
 
     align-self: flex-end;
+}
+
+.gadget-control_item{
+    margin-left: 20px;
+
+    list-style: none;
 }
 
 .gadget_toggle{
@@ -693,7 +703,6 @@ img{
 
     width: 13px;
     height: 13px;
-    margin-left: 20px;
 
     cursor: pointer;
 
@@ -704,7 +713,7 @@ img{
 }
 
 .gadget_toggle:active,
-.toggle-current{
+.current-toggle{
     background-image: url('../img/slider-button.svg');
 }
 
@@ -956,6 +965,7 @@ img{
     color: rgba(0,0,0,1);
     border: none;
     background-color: transparent;
+    outline: none;
 }
 
 .info_button:not(:first-child){
@@ -1019,8 +1029,8 @@ img{
     display: none;
 }
 
-.info-slide{
-    display: none;
+.info-tab{
+    display: flex;
     flex-direction: column;
 
     width: 760px;
@@ -1041,10 +1051,6 @@ img{
 
 .credit{
     background-image: url('../img/info_credit.png');
-}
-
-.current_slide{
-    display: flex;
 }
 
 .info_title{
@@ -1238,6 +1244,7 @@ img{
 
 .shop_img{
     margin-top: 42px;
+    vertical-align: bottom;
 }
 
 .footer {
@@ -1461,8 +1468,6 @@ img{
     margin-top: 20px;
 }
 
-
-
 .social_link{
     display: block;
 
@@ -1520,7 +1525,13 @@ img{
 }
 
 .popup{
-    position: relative;
+    position: fixed;
+    z-index: 2;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
 
     display: none;
 
@@ -1532,6 +1543,25 @@ img{
 
 .popup_active{
     display: block;
+
+    animation-name: bounce;
+    animation-duration: 1s;
+}
+
+@keyframes bounce{
+    0% { transform: translate(1000px, -50%); }
+    100% { transform: translate(-50%, -50%); }
+}
+
+.popup_error{
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
+@keyframes shake{
+    0%, 100% { transform: translate(-50%, -50%); }
+    20%, 60% { transform: translate(-48%, -50%); }
+    40%, 80% { transform: translate(-52%, -50%); }
 }
 
 .popup_close{
@@ -1560,16 +1590,6 @@ img{
 
 .popup_close:active{
     opacity: 0.3;
-}
-
-.write-us,
-.map{
-    position: fixed;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
 }
 
 .form{
@@ -1605,7 +1625,7 @@ img{
     margin-top: 40px;
 }
 
-.map img{
+.map iframe{
     vertical-align: bottom;
 }
 
@@ -2041,7 +2061,6 @@ input[type='radio']:focus+.radiobutton_label::before{
 }
 
 input[type='radio']:checked+.radiobutton_label::before{
-    opacity: 0.6;
     background-image: url('../img/filter_radio-on.svg');
 }
 
