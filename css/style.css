@@ -425,6 +425,8 @@ img{
     padding-bottom: 37px;
     padding-left: 60px;
 
+    flex-wrap: wrap;
+
     background-color: rgba(247,226,150,1);
 }
 
@@ -480,7 +482,7 @@ img{
 
     list-style: none;
 
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .menu-info_item{
@@ -549,6 +551,8 @@ img{
 }
 
 .gadget_list{
+    position: relative;
+
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -561,7 +565,6 @@ img{
 }
 
 .gadget_slide{
-    position: relative;
     display: flex;
 }
 
@@ -602,6 +605,11 @@ img{
     display: flex;
 
     align-self: center;
+}
+
+.gadget_img img{
+    width: 560px;
+    height: 507px;
 }
 
 .gadget_lead{
@@ -904,6 +912,10 @@ img{
     content: '';
 
     background-color: transparent;
+}
+
+.category_title:active{
+    color: rgba(0,0,0,0.3);
 }
 
 .category_title:active::after{
@@ -1925,22 +1937,19 @@ legend::before{
     border-radius: 50%;
     background: #ababab;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    transform: translateX(-50%) scale(0.9);
 }
 
 .range-toggle-min{
     left: 0;
-
-    transform: translateX(-50%);
 }
 
 .range-toggle-max{
     left: 110px;
-
-    transform: translateX(-50%);
 }
 
-.range-toggle:hover{
-    background: #1c4f80;
+.range-toggle:active{
+    transform: translateX(-50%) scale(1);
 }
 
 .price_controls label,
@@ -1950,7 +1959,7 @@ legend::before{
 
     display: inline-block;
 
-    vertical-align: middle;
+    vertical-align: top;
 
     color: rgba(0,0,0,0.2);
 }
@@ -1985,7 +1994,7 @@ legend::before{
 .max-price{
     left: 115px;
 
-    transform: translateX(-25%);
+    transform: translateX(-50%);
 }
 
 .checkbox_label,
@@ -2256,6 +2265,9 @@ input[type='radio']:disabled+.radiobutton_label{
 }
 
 .product_img{
+    width: 360px;
+    height: 380px;
+
     order: 1;
 }
 
@@ -2386,16 +2398,11 @@ input[type='radio']:disabled+.radiobutton_label{
 }
 
 .pagination{
-    display: flex;
-
     width: 760px;
     margin-top: 36px;
     margin-left: 70px;
 
     background-color: #ebebeb;
-
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 .pagination_list{
@@ -2408,10 +2415,19 @@ input[type='radio']:disabled+.radiobutton_label{
     list-style: none;
 
     flex-wrap: wrap;
+    align-items: center;
 }
 
-.pagination_item{
+.pagination_item:nth-child(2){
     margin-left: 10px;
+}
+
+.back{
+    margin-right: auto;
+}
+
+.next{
+    margin-left: auto;
 }
 
 .pagination_link{
@@ -2455,14 +2471,6 @@ input[type='radio']:disabled+.radiobutton_label{
     text-transform: uppercase;
 
     color: rgba(0,0,0,1);
-}
-
-.back{
-    margin-right: auto;
-}
-
-.next{
-    margin-left: auto;
 }
 
 .pagination_button:hover,
