@@ -341,7 +341,7 @@ img{
     text-decoration: none;
     letter-spacing: 0.01em;
 
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0,0,0,1);
 }
 
 .cart::before,
@@ -405,12 +405,6 @@ img{
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-}
-
-.menu_catalog_item{
-    position: relative;
-
-    list-style: none;
 }
 
 .menu-catalog_wrapper{
@@ -543,6 +537,10 @@ img{
     display: flex;
 }
 
+.gadget{
+    overflow: hidden;
+}
+
 .gadget .container{
     display: flex;
     flex-direction: column;
@@ -636,7 +634,7 @@ img{
 
     content: '';
 
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .gadget_text{
@@ -978,7 +976,6 @@ img{
     color: rgba(0,0,0,1);
     border: none;
     background-color: transparent;
-    outline: none;
 }
 
 .info_button:not(:first-child){
@@ -1106,66 +1103,50 @@ img{
     flex-wrap: wrap;
 }
 
-.producer_link{
-    display: block;
-    overflow: hidden;
-}
-
 .producer_item{
     margin-top: 40px;
     margin-left: 40px;
+}
+
+.producer_link{
+    display: block;
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-position: 0 300px;
+}
+
+.producer_link:hover,
+.producer_link:focus{
+    background-position: center top;
+}
+
+.producer_dji{
+    background-image: url('../img/producer_dji_br.png');
+}
+
+.producer_gopro{
+    background-image: url(../img/producer_gopro_br.png);
+}
+
+.producer_sp_gadgets{
+    background-image: url(../img/producer_sp_gadgets_br.png);
+}
+
+.producer_vive{
+    background-image: url(../img/producer_vive_br.png);
+}
+
+.producer_logo{
+    vertical-align: bottom;
 }
 
 .producer_logo:hover{
     opacity: 0;
 }
 
-.producer_dji{
-    background-image: url('../img/producer_dji_br.png');
-    background-repeat: no-repeat;
-    background-position: 0 300px;
-}
-
-.producer_dji:hover,
-.producer_dji:focus{
-    background-position: center top;
-}
-
-.producer_gopro{
-    background-image: url(../img/producer_gopro_br.png);
-    background-repeat: no-repeat;
-    background-position: 0 300px;
-}
-
-.producer_gopro:hover,
-.producer_gopro:focus{
-    background-position: center top;
-}
-
-.producer_sp_gadgets{
-    background-image: url(../img/producer_sp_gadgets_br.png);
-    background-repeat: no-repeat;
-    background-position: 0 300px;
-}
-
-.producer_sp_gadgets:hover,
-.producer_sp_gadgets:focus{
-    background-position: center top;
-}
-
-.producer_vive{
-    background-image: url(../img/producer_vive_br.png);
-    background-repeat: no-repeat;
-    background-position: 0 300px;
-}
-
-.producer_vive:hover,
-.producer_vive:focus{
-    background-position: center top;
-}
-
 .shop{
-    margin-top: 83px;
+    margin-top: 93px;
     padding-bottom: 78px;
 }
 
@@ -1202,7 +1183,7 @@ img{
 
     content: '';
 
-    background-color: black;
+    background-color: rgba(0,0,0,1);
 }
 
 .shop_text{
@@ -1260,7 +1241,7 @@ img{
     vertical-align: bottom;
 }
 
-.footer {
+.footer{
     padding-top: 65px;
     padding-bottom: 65px;
 
@@ -1326,7 +1307,7 @@ img{
 .footer .profile:hover,
 .footer .profile:focus{
     opacity: 1;
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer .menu-user_link:hover::before,
@@ -1370,7 +1351,7 @@ img{
 .footer .menu-buying_link:hover,
 .footer .menu-buying_link:focus{
     opacity: 1;
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer .menu-buying_link:hover::before,
@@ -1550,7 +1531,7 @@ img{
 
     width: 960px;
 
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
@@ -1833,7 +1814,7 @@ img{
 
     content: '';
 
-    background-color: #eee;
+    background-color: #eeeeee;
 }
 
 .filter_fieldset{
@@ -1853,7 +1834,7 @@ img{
     padding-bottom: 31px;
 }
 
-legend{
+.filter_property{
     position: absolute;
     top: 0;
     left: 0;
@@ -1861,7 +1842,7 @@ legend{
     width: 100%;
 }
 
-legend::before{
+.filter_property::before{
     position: absolute;
     top: -12px;
     right: 0;
@@ -1918,6 +1899,8 @@ legend::before{
 }
 
 .range-controls .bar{
+    display: block;
+
     width: 110px;
     height: 2px;
 
@@ -1933,10 +1916,10 @@ legend::before{
 
     cursor: pointer;
 
-    border: 8px solid #fff;
+    border: 8px solid #ffffff;
     border-radius: 50%;
-    background: #ababab;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
     transform: translateX(-50%) scale(0.9);
 }
 
@@ -2140,8 +2123,8 @@ input[type='radio']:disabled+.radiobutton_label{
 
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 0;
 
     list-style: none;
@@ -2192,7 +2175,7 @@ input[type='radio']:disabled+.radiobutton_label{
 }
 
 .selection-direction_item{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .selection-direction_button{
@@ -2200,8 +2183,8 @@ input[type='radio']:disabled+.radiobutton_label{
 
     display: block;
 
-    width: 10px;
-    height: 20px;
+    width: 20px;
+    height: 25px;
 
     opacity: 0.2;
     background-repeat: no-repeat;
@@ -2227,10 +2210,6 @@ input[type='radio']:disabled+.radiobutton_label{
 
 .direction_down{
     background-image: url('../img/selection-direction-down.svg');
-}
-
-.selection_current{
-    opacity: 1;
 }
 
 .product_list{
@@ -2291,7 +2270,7 @@ input[type='radio']:disabled+.radiobutton_label{
     padding-right: 37px;
 }
 
-.button-grey{
+.button_to-compare{
     font-family: 'OpenSans', Arial, sans-serif;
     font-size: 13px;
     line-height: 36px;
@@ -2307,12 +2286,12 @@ input[type='radio']:disabled+.radiobutton_label{
     background-color: transparent;
 }
 
-.button-grey:hover,
-.button-grey:focus{
+.button_to-compare:hover,
+.button_to-compare:focus{
     opacity: 1;
 }
 
-.button-grey:active{
+.button_to-compare:active{
     opacity: 0.2;
 }
 
@@ -2397,6 +2376,10 @@ input[type='radio']:disabled+.radiobutton_label{
     letter-spacing: 0.01em;
 }
 
+.text-nowrap{
+    white-space: nowrap;
+}
+
 .pagination{
     width: 760px;
     margin-top: 36px;
@@ -2437,7 +2420,7 @@ input[type='radio']:disabled+.radiobutton_label{
 
     display: block;
 
-    padding: 10px 10px;
+    padding: 10px 15px;
 
     text-decoration: none;
     letter-spacing: 0.2em;
