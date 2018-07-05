@@ -541,13 +541,13 @@ img {
 .gadget_text {
     font-family: "OpenSans", Arial, sans-serif;
     width: 500px;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 0;
     letter-spacing: .01em;
 }
 
-.gadget_description p:nth-child(2) {
-    margin-top: 20px;
+.gadget_text + .gadget_text {
+    margin-top: 0;
 }
 
 .gadget_table {
