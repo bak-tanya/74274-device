@@ -924,6 +924,10 @@ img {
     letter-spacing: .01em;
 }
 
+.info_text + .info_text {
+    margin-top: 0;
+}
+
 .producer {
     margin-top: 91px;
 }
@@ -1389,7 +1393,7 @@ img {
 .form {
     margin-right: 100px;
     margin-left: 100px;
-    padding-top: 95px;
+    padding-top: 90px;
     padding-bottom: 75px;
 }
 
@@ -1414,7 +1418,7 @@ img {
 }
 
 .popup .button {
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 .map iframe {
