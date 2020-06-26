@@ -1,11 +1,6 @@
 # Личный проект «Девайс»
 [Посмотреть результат](https://tatyanabak.github.io/HTML-Academy_device/).
 
-* Студент: [Татьяна Бак](https://up.htmlacademy.ru/htmlcss/21/user/74274).
-* Наставник: [Евгений Закурдаев](https://htmlacademy.ru/profile/eugeno).
-
----
-
 **Используемые языки и технологии**
 * HTML, CSS
 * HTML проверен на валидность с помощью [validator.w3.org](https://validator.w3.org/)
